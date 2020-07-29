@@ -5,11 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import "./layout.scss"
+import React from "react";
+import HeaderMenu from '../components/HeaderMenu';
+import "./layout.scss";
+
 
 const Layout = ({ children }) => (
   <>
+  <HeaderMenu />
   <div className='container'>
     {children}
   </div>
