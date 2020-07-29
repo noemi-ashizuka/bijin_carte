@@ -66,6 +66,47 @@ exports.createPages = ({ graphql, actions }) => {
         })
       })
       // ==== END PAGES ====
+
+      // ==== CUSTOM POST TYPE: PRODUCT ====
+
+      .then(() => {
+        graphql(
+          `
+            {
+              allWordpressWpProduct{
+                edges{
+                  node{
+                    id
+                    slug
+                    title
+                    excerpt
+                    content
+                    featured_media{
+                      source_url
+                    }
+                  }
+                }
+              }
+            }
+            
+          `
+        ).then(result => {
+          if (result.errors) {
+            console.log(result.errors)
+            reject(result.errors)
+          }
+          const productTemplate = path.resolve("./src/templates/product.js")
+          _.each(result.data.allWordpressWpProduct.edges, edge => {
+            createPage({
+              path: `/product/${edge.node.slug}`,
+              component: slash(productTemplate),
+              context: edge.node,
+            })
+          })
+        })
+      })
+
+      // ==== END CUSTOM POST TYPE: PRODUCT
  
       // ==== POSTS (WORDPRESS NATIVE AND ACF) ====
       .then(() => {

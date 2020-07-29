@@ -1,20 +1,18 @@
 import React from 'react'
+import {Link} from 'gatsby';
 import './productcard.scss'
 
-const ProductCard = () => (
-  <div className="card-box">
+const ProductCard = (props) => (
+  <div className="card-box" key={props.node.id}>
     <div className="card-bg-color-top">
-      <h1 className="card-text-title">Make up Lessons</h1>
+      <h1 className="card-text-title">{props.node.title}</h1>
     </div>
-    <img className="card-image" src="https://res.cloudinary.com/dtewjoisz/image/upload/v1595992246/bijin%20carte/pexels-photo-457701_bruobi.webp" alt="make up"></img>
+    <img className="card-image" src={props.node.featured_media.source_url} alt="make up thumbnail"></img>
     <div className="card-bg-color-bottom">
-      <div class="card-text">
-        <p class="text-content">とするのも、こういう自由です勝手も最もばらばらでらく威張っみるなくてなかったです。いくら講義あてるのでもどう自他を活動しれなっやっれるをあるがなりからです。あれは私がたば好きに思うたのを演説思っものだたなく。</p>
-      </div>
+      <div class="card-text" dangerouslySetInnerHTML={{__html: props.node.excerpt }} />
+      <Link to={`/product/${props.node.slug}`}>Read More</Link>
     </div>
   </div>
-  
- 
 )
 
 export default ProductCard;
