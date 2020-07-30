@@ -5,11 +5,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Liu+Jian+Mao+Cao&family=Nothing+You+Could+Do&family=Noto+Serif+JP:wght@400;500;600&family=Over+the+Rainbow&display=swap');
 
+$not-black: rgb(25, 17, 15);
+
 body {
   background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596027241/bijin%20carte/phone_bg_light_so53mw.jpg),
   center no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  color: $not-black;
 }
 
 @media (min-width: 600px) {
