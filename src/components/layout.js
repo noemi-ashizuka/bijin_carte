@@ -7,7 +7,7 @@
 
 import React from "react";
 import HeaderMenu from '../components/HeaderMenu';
-import "./layout.scss";
+import "../styles/layout.scss";
 
 
 const Layout = ({ children }) => (
