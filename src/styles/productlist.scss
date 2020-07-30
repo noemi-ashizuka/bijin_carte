@@ -2,4 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 20%;
+  justify-content: center;
+
+  .list-title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 52px;
+    margin-bottom: 0;
+  }
+  
+  .list-subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
 }

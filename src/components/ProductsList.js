@@ -23,6 +23,10 @@ const ProductsList = () => (
       }
     }
   `} render={props => <div className="list-container">
+    <h1 className="list-title">Lessons</h1>
+    <h3 className="list-subtitle">あなたの持つ本来の「美」を見つけましょう
+      <br/>それぞれのニーズに合わせたメニューをご用意しています。
+    </h3>
       {props.allWordpressWpProduct.edges.map(product =>
         <ProductCard {...product} key={product.node.id} />
     )}
