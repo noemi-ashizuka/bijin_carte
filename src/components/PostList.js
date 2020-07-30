@@ -16,6 +16,7 @@ const PostList = () => (
             excerpt
             featured_media{
               source_url
+              alt_text
             }
           }
         }

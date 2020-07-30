@@ -16,6 +16,7 @@ const ProductsList = () => (
             content
             featured_media{
               source_url
+              alt_text
             }
           }
         }
