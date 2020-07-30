@@ -8,8 +8,6 @@ export default ({pageContext}) => (
   <Layout>
     <Banner />
     <PostList />
-    <h1 dangerouslySetInnerHTML={{__html: pageContext.title}} />
-    <div dangerouslySetInnerHTML={{__html: pageContext.content}} />
     <ProductsList />
   </Layout>
 );

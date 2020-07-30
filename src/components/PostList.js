@@ -1,6 +1,7 @@
 import React from 'react';
 import {graphql, StaticQuery} from 'gatsby';
 import PostCard from './PostCard';
+import '../styles/postlist.scss'
 
 const PostList = () => (
   <StaticQuery query={graphql`
@@ -20,9 +21,9 @@ const PostList = () => (
         }
       }
     }
- `} render={props => <div>
+ `} render={props => <div className="post-cards-wrapper">
    {props.allWordpressPost.edges.map(post => 
-   <PostCard {...post} />
+   <PostCard {...post} key={post.node.id} />
    )}
     </div>
   } /> 

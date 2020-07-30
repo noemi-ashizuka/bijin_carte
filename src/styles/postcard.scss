@@ -1,0 +1,43 @@
+.post-card-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15%;
+  
+  .post-card-color-box {
+    background-color: rgba(255, 248, 242, 0.7);
+    padding: 24px;
+    .post-card-right {
+      margin: 0 auto;
+      .post-card-title {
+        margin-top: 10%;
+        font-family: 'Nothing You Could Do', cursive;
+        font-size: 52px;
+        text-align: end;
+        text-align: center;
+      }
+
+      .post-card-text {
+        text-align: center;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    
+    }
+  }
+
+  .post-card-image {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: -10%;
+    position: relative;
+    z-index: 1000;
+    // position: absolute;
+    // top: -20%;
+    // left: 20%;
+    
+  }
+}
