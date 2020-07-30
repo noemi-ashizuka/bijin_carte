@@ -9,7 +9,7 @@ const ProductCard = (props) => (
     </div>
     <img className="card-image" src={props.node.featured_media.source_url} alt="make up thumbnail"></img>
     <div className="card-bg-color-bottom">
-      <div class="card-text" dangerouslySetInnerHTML={{__html: props.node.excerpt }} />
+      <div className="card-text" dangerouslySetInnerHTML={{__html: props.node.excerpt }} />
       <Link to={`/product/${props.node.slug}`}>Read More</Link>
     </div>
   </div>
