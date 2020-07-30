@@ -1,5 +1,6 @@
 import React from 'react';
 import {graphql, StaticQuery} from 'gatsby';
+import Button from './Button';
 import '../styles/gallery.scss';
 
 const Gallery = () => (
@@ -25,11 +26,10 @@ const Gallery = () => (
           <img src={image.node.source_url} alt={image.node.alt_text} key={image.node.id} className="gallery-image" />
         )}
         <div className="gallery-color-box" />
+        <Button title="More" />
       </div>
     </div>
-  )}
-  
-  />
+  )} />
 );
 
 export default Gallery;
