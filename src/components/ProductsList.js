@@ -23,7 +23,7 @@ const ProductsList = () => (
     }
   `} render={props => <div className="list-container">
       {props.allWordpressWpProduct.edges.map(product =>
-        <ProductCard {...product} key={product.node.key} />
+        <ProductCard {...product} key={product.node.id} />
     )}
     </div>
   } />
