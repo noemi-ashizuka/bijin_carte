@@ -1,5 +1,5 @@
 import React from 'react';
-import {graphql, StaticQuery, Link} from 'gatsby';
+import {graphql, StaticQuery} from 'gatsby';
 
 const Gallery = () => (
   <StaticQuery query={graphql`
@@ -16,15 +16,13 @@ const Gallery = () => (
     }
     `
   } render={props =>(
-    <div>
-      {props.allWordpressWpMedia.edges.map(image => 
-        <img src={image.node.source_url} alt={image.node.alt_text} />
+    <div className="gallery-container">
+      {props.allWordpressWpMedia.edges.slice(0, 4).map(image => 
+        <img src={image.node.source_url} alt={image.node.alt_text} key={image.node.id} className="gallery-image" />
       )}
     </div>
   )}
-
-
   />
-)
+);
 
 export default Gallery;
