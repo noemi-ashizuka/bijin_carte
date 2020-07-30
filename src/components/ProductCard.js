@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby';
-import './productcard.scss'
+import '../styles/productcard.scss'
 
 const ProductCard = (props) => (
   <div className="card-box" key={props.node.id}>
