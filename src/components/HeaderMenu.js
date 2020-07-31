@@ -1,5 +1,6 @@
 import React from 'react';
-import {graphql, StaticQuery, Link} from 'gatsby';
+import {Navbar, Nav} from 'react-bootstrap';
+import {graphql, StaticQuery} from 'gatsby';
 import '../styles/headermenu.scss'
 
 
@@ -23,15 +24,19 @@ const HeaderMenu = () => (
     }
   `} 
   render={props => (
-    <div className="navbar">
-      <div className="navbar-inner">
-        {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item => 
-          <Link to={`/${item.object_slug}` === 'home' ? '/' : `/${item.object_slug}`} key={item.title} className="navbar-menu-item">
-            {item.title}
-          </Link>
-        )}
-      </div>
-    </div>
+    <Navbar expand="lg" sticky="top" className="navbar">
+      <Navbar.Brand href="#home">美人カルテ</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ml-auto"> 
+            {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item => 
+              <Nav.Link href={`/${item.object_slug}` === 'home' ? '/' : `/${item.object_slug}`} key={item.title} className="navbar-menu-item ml-auto m-1">
+                {item.title}
+              </Nav.Link>
+            )}
+          </Nav>
+        </Navbar.Collapse>
+    </Navbar>
   )} />
 );
 
