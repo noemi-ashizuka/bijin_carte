@@ -1,6 +1,6 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
-import {graphql, StaticQuery, Link} from 'gatsby';
+import {Navbar, Nav} from 'react-bootstrap';
+import {graphql, StaticQuery} from 'gatsby';
 import '../styles/headermenu.scss'
 
 
@@ -30,14 +30,10 @@ const HeaderMenu = () => (
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto"> 
             {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item => 
-              <div className="navbar-inner">
-                <Nav.Link>
-                  <Link to={`/${item.object_slug}` === 'home' ? '/' : `/${item.object_slug}`} key={item.title} className="navbar-menu-item">
-                    {item.title}
-                  </Link>
-                </Nav.Link>
-                </div>
-              )}
+              <Nav.Link href={`/${item.object_slug}` === 'home' ? '/' : `/${item.object_slug}`} key={item.title} className="navbar-menu-item ml-auto m-1">
+                {item.title}
+              </Nav.Link>
+            )}
           </Nav>
         </Navbar.Collapse>
     </Navbar>
