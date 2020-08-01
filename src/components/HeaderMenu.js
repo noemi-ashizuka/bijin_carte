@@ -28,7 +28,7 @@ const HeaderMenu = () => (
       <Navbar.Brand href="#home">美人カルテ</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto"> 
+          <Nav className="ml-auto">
             {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item => 
               <Nav.Link href={`/${item.object_slug}` === 'home' ? '/' : `/${item.object_slug}`} key={item.title} className="navbar-menu-item ml-auto m-1">
                 {item.title}

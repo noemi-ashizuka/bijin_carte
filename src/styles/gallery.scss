@@ -1,37 +1,43 @@
-.gallery-container {
-  width: 100%;
+.gallery-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  position: relative;
-  z-index: 1000;
-  
-  .gallery-image {
-    width: 40%;
-    padding: 16px;
-    position: relative;
-    z-index: 2;
-  }
+  flex-direction: column;
+  align-items: center;
 
-  .gallery-color-box {
+  .gallery-container {
     width: 100%;
-    height: 50%;
-    background-color: rgba(255, 248, 242, 0.7);;
-    position: absolute;
-    top: 30%;
-    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1000;
+    
+    .gallery-image {
+      width: 40%;
+      padding: 16px;
+      position: relative;
+      z-index: 2;
+    }
+  
+    .gallery-color-box {
+      width: 100%;
+      height: 50%;
+      background-color: rgba(255, 248, 242, 0.7);;
+      position: absolute;
+      top: 30%;
+      z-index: 1;
+    }
   }
-}
-
-.gallery-title {
-  font-family: 'Nothing You Could Do', cursive;
-  font-size: 52px;
-  text-align: center;
-}
-
-.gallery-subtitle {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 32px;
+  
+  .gallery-title {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 52px;
+    text-align: center;
+  }
+  
+  .gallery-subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
 }
