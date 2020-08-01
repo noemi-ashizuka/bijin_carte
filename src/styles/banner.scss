@@ -38,11 +38,12 @@
   position: relative;
 
   .banner-color-box {
-    background-color: rgba(238, 231, 224, 0.5);
+    // background-color: rgba(238, 231, 224, 0.5);
+    background-color: rgba(255, 248, 242, 0.7);
     height: 80%;
     width: 100%;
     position: absolute;
-    top: 2%;
+    top: 5%;
     right: 10%;
     bottom: 50%;
   }
@@ -56,14 +57,14 @@
     justify-content: center;
 
     .banner-bg-image {
-      background: linear-gradient(to bottom, rgba(235, 182, 182, 0.4), rgba(236, 159, 159, 0.4)), url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596002225/bijin%20carte/pexels-photo-2395249_g1vpqw.webp)
+      background: linear-gradient(to bottom, rgba(235, 182, 182, 0.4), rgba(236, 161, 161, 0.4)), url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596002225/bijin%20carte/pexels-photo-2395249_g1vpqw.webp)
       center no-repeat;
       background-size: cover;
       position: absolute;
-      top: 10%;
-      bottom: 10%;
-      right: -4%;
-      left: 3%;
+      top: 15%;
+      bottom: 5%;
+      right: 0;
+      left: 5%;
       z-index: -1;
       opacity: 0.7;
     }

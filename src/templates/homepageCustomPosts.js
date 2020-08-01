@@ -4,6 +4,7 @@ import ProductsList from '../components/ProductsList';
 import Banner from '../components/Banner';
 import PostList from '../components/PostList';
 import Gallery from '../components/Gallery';
+import FooterMenu from '../components/FooterMenu';
 
 export default ({pageContext}) => (
   <Layout>
@@ -11,5 +12,6 @@ export default ({pageContext}) => (
     <PostList />
     <ProductsList />
     <Gallery />
+    <FooterMenu />
   </Layout>
 );
