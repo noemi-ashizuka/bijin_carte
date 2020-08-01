@@ -18,7 +18,7 @@ const Gallery = () => (
     }
     `
   } render={props =>(
-    <div>
+    <div className="gallery-wrapper">
       <h1 className="gallery-title">Gallery</h1>
       <h3 className="gallery-subtitle">各メニューのサンプルのスライドショー</h3>
       <div className="gallery-container">
@@ -26,8 +26,9 @@ const Gallery = () => (
           <img src={image.node.source_url} alt={image.node.alt_text} key={image.node.id} className="gallery-image" />
         )}
         <div className="gallery-color-box" />
-        <Button title="More" />
+        
       </div>
+      <Button title="More" className="gallery-button" />
     </div>
   )} />
 );
