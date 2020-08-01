@@ -1,48 +1,87 @@
-.banner-box {
-  background-color: rgba(255, 255, 255, 0.0);
-  width: 100%;
-  height: 400px;
-  position: relative;
+// .banner-box {
+//   background-color: rgba(255, 255, 255, 0.0);
+//   width: 100%;
+//   height: 400px;
+//   position: relative;
   
-  .banner-image-box {
-    // background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596002225/bijin%20carte/pexels-photo-2395249_g1vpqw.webp)
-    // center no-repeat;
-    // background-size: cover;
-    // background-origin: border-box;
-    box-sizing: border-box;
-    background-color: rgba(235, 182, 182, 0.7);
-    height: 85%;
-    width: 65%;
-    position: absolute;
-    z-index: 2;
-    left: 30%;//343.34px;
-    top: 24%;//94px;
-  }
+//   .banner-image-box {
+//     background: linear-gradient(to bottom, rgba(235, 182, 182, 0.4), rgba(236, 159, 159, 0.4)), url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596002225/bijin%20carte/pexels-photo-2395249_g1vpqw.webp)
+//     center no-repeat;
+//     background-size: cover;
+//     // background-origin: border-box;
+//     box-sizing: border-box;
+//     opacity: 0.8;
+//     // background-color: rgba(235, 182, 182, 0.7);
+//     height: 85%;
+//     width: 95%;
+//     position: absolute;
+//     z-index: 2;
+//     left: 10%;//343.34px;
+//     top: 24%;//94px;
+//   }
+
+//   .banner-color-box {
+//     background-color: rgba(238, 231, 224, 0.5);
+//     width: 95%;
+//     height: 80%;
+//     position: absolute;
+//     left: 0;
+//     top: 15%;
+//     z-index: 1;
+//   }
+// }
+
+.banner-box {
+  background-color:rgba(255, 255, 255, 0.0);
+  width: 100%;
+  height: 350px;
+  position: relative;
 
   .banner-color-box {
     background-color: rgba(238, 231, 224, 0.5);
-    width: 75%;
     height: 80%;
+    width: 100%;
     position: absolute;
-    left: 12%;//163px;
-    top: 66px;
-    z-index: 1;
+    top: 2%;
+    right: 10%;
+    bottom: 50%;
   }
 
-  .banner-title {
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    z-index: 3;
-    .banner-bold-title {
-      text-align: center;
-      text-transform: uppercase;
-      font-family: 'Nothing You Could Do', cursive;
-      font-size: 60px;
+  .banner-image-box {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .banner-bg-image {
+      background: linear-gradient(to bottom, rgba(235, 182, 182, 0.4), rgba(236, 159, 159, 0.4)), url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596002225/bijin%20carte/pexels-photo-2395249_g1vpqw.webp)
+      center no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: -4%;
+      left: 3%;
+      z-index: -1;
+      opacity: 0.7;
     }
 
-    .banner-cursive-title {
-      text-transform: lowercase;
+    .banner-title {
+      margin: 0 auto;
+      align-self: center;
+
+      .banner-bold-title {
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+
+      .banner-cursive-title {
+        text-transform: lowercase;
+        font-family: 'Nothing You Could Do', cursive;
+        margin-left: 50px;
+      }
     }
   }
 }
