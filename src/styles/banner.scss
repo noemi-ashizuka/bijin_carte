@@ -57,7 +57,7 @@
     justify-content: center;
 
     .banner-bg-image {
-      background: linear-gradient(to bottom, rgba(235, 182, 182, 0.4), rgba(236, 161, 161, 0.4)), url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596002225/bijin%20carte/pexels-photo-2395249_g1vpqw.webp)
+      background: linear-gradient(to bottom, rgba(243, 218, 218, 0.4), rgba(221, 178, 178, 0.4)), url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596002225/bijin%20carte/pexels-photo-2395249_g1vpqw.webp)
       center no-repeat;
       background-size: cover;
       position: absolute;
@@ -72,6 +72,7 @@
     .banner-title {
       margin: 0 auto;
       align-self: center;
+      padding-top: 52px;
 
       .banner-bold-title {
         text-transform: uppercase;
@@ -86,6 +87,22 @@
         font-family: 'Nothing You Could Do', cursive;
         margin-left: 80px;
         font-size: 40px;
+      }
+
+      .banner-subtitle {
+        font-size: 16px;
+        text-align: end;
+        margin-left: 210px;
+        line-height: 24px;
+        opacity: 0.8;
+        margin-bottom: 0;
+      }
+
+      .banner-button {
+        margin: 0 auto;
+        height: 50px;
+        display: flex;
+        justify-content: center;
       }
     }
   }
