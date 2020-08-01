@@ -6,9 +6,9 @@ import '../styles/footer.scss';
 const FooterMenu = () => (
   <div className="footer-menu-box">
     <div className="footer-text-links">
-      <p>Site Info</p>
-      <p>Profile</p>
-      <p>Policy</p>
+      <p className="footer-link">Site Info</p>
+      <p className="footer-link">Profile</p>
+      <p className="footer-link">Policy</p>
     </div>
     <div className="footer-icons">
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitterSquare} className="footer-icon" /></a>
