@@ -8,6 +8,7 @@ const Banner = () => (
         <div className="banner-bg-image"></div>
         <div className="banner-title">
           <h1 className="banner-bold-title">Find <br/><span className="banner-cursive-title">your beauty</span></h1>
+          <h3 className="banner-subtitle">with 美人カルテ</h3>
         </div>
       </div>
   </div>
