@@ -23,17 +23,18 @@ const Gallery = () => (
     <div className="gallery-wrapper">
       <h1 className="gallery-title">Gallery</h1>
       <h3 className="gallery-subtitle">各メニューのサンプルのスライドショー</h3>
-      <Fade left cascade>
+      
         <div className="gallery-container">
           {props.allWordpressWpMedia.edges.slice(0, 3).map(image =>
-            <div className="gallery-image-box">
-              <img src={image.node.source_url} alt={image.node.alt_text} key={image.node.id} className="gallery-image" />
-              <p dangerouslySetInnerHTML={{ __html: image.node.caption }}></p>
-            </div>
+            <Fade left duration={1500}>
+              <div className="gallery-image-box">
+                <img src={image.node.source_url} alt={image.node.alt_text} key={image.node.id} className="gallery-image" />
+                <p dangerouslySetInnerHTML={{ __html: image.node.caption }}></p>
+              </div>
+            </Fade>
           )}
           <div className="gallery-color-box" />
         </div>
-      </Fade>
       <Button title="More" />
     </div>
   )} />
