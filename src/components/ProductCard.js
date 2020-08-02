@@ -13,8 +13,9 @@ const ProductCard = (props) => (
       <img className="card-image" src={props.node.featured_media.source_url} alt={props.node.featured_media.alt_text}></img>
       <div className="card-bg-color-bottom">
         <div className="card-text" dangerouslySetInnerHTML={{__html: props.node.excerpt }} />
+        <Link to={`/product/${props.node.slug}`}><Button title="Read More" /></Link>
       </div>
-      <Link to={`/product/${props.node.slug}`}><Button title="Read More" /></Link>
+      
     </div>
   </Fade>
 )

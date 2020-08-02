@@ -30,7 +30,7 @@ const Gallery = () => (
           <div className="gallery-color-box" />
         </div>
       </Fade>
-      <Button title="More" className="gallery-button" />
+      <Button title="More" />
     </div>
   )} />
 );
