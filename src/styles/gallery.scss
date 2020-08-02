@@ -12,16 +12,25 @@
     position: relative;
     z-index: 1000;
     
-    .gallery-image {
-      width: 100%;
-      padding: 16px;
-      position: relative;
-      z-index: 2;
+    .gallery-image-box {
+      z-index: 3;
+      
+      .gallery-image {
+        width: 100%;
+        padding: 16px;
+        position: relative;
+        z-index: 2;
+      }
+
+      p {
+        opacity: 0.8;
+        text-align: center;
+      }
+      
     }
-  
     .gallery-color-box {
       width: 60%;
-      height: 98%;
+      height: 99%;
       background-color: rgba(255, 248, 242, 0.7);;
       position: absolute;
       top: 5%;
@@ -37,7 +46,7 @@
   
   .gallery-subtitle {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     margin-bottom: 32px;
   }

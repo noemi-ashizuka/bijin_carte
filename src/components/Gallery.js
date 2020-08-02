@@ -13,6 +13,7 @@ const Gallery = () => (
             id
             alt_text
             source_url
+            caption
           }
         }
       }
@@ -24,8 +25,11 @@ const Gallery = () => (
       <h3 className="gallery-subtitle">各メニューのサンプルのスライドショー</h3>
       <Fade left cascade>
         <div className="gallery-container">
-          {props.allWordpressWpMedia.edges.slice(0, 4).map(image => 
-            <img src={image.node.source_url} alt={image.node.alt_text} key={image.node.id} className="gallery-image" />
+          {props.allWordpressWpMedia.edges.slice(0, 3).map(image =>
+            <div className="gallery-image-box">
+              <img src={image.node.source_url} alt={image.node.alt_text} key={image.node.id} className="gallery-image" />
+              <p dangerouslySetInnerHTML={{ __html: image.node.caption }}></p>
+            </div>
           )}
           <div className="gallery-color-box" />
         </div>
