@@ -3,9 +3,11 @@
   src: url('../../static/fonts/BestDealsFree.ttf') format('truetype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Liu+Jian+Mao+Cao&family=Nothing+You+Could+Do&family=Noto+Serif+JP:wght@400;500;600&family=Over+the+Rainbow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 $not-black: rgb(25, 17, 15);
 
@@ -15,7 +17,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: $not-black;
-  font-family: 'Noto Serif JP', serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Klee", "Hiragino Kaku Gothic Pro", sans-serif;
+  // font-family: 'Noto Serif JP', serif;
   // font-family: 'Noto Sans JP', sans-serif;
 }
 
