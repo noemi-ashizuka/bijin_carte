@@ -23,10 +23,10 @@ const PostList = () => (
       }
     }
  `} render={props => <div className="post-cards-wrapper">
-   {props.allWordpressPost.edges.map(post => 
-   <PostCard {...post} key={post.node.id} />
-   )}
-    </div>
+  {props.allWordpressPost.edges.map(post => 
+    <PostCard {...post} key={post.node.id} />
+  )}
+  </div>
   } /> 
 )
 
