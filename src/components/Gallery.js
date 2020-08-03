@@ -26,9 +26,9 @@ const Gallery = () => (
       
         <div className="gallery-container">
           {props.allWordpressWpMedia.edges.slice(0, 3).map(image =>
-            <Fade left duration={1500}>
+            <Fade left duration={1500} key={image.node.id}>
               <div className="gallery-image-box">
-                <img src={image.node.source_url} alt={image.node.alt_text} key={image.node.id} className="gallery-image" />
+                <img src={image.node.source_url} alt={image.node.alt_text} className="gallery-image" />
                 <p dangerouslySetInnerHTML={{ __html: image.node.caption }}></p>
               </div>
             </Fade>
