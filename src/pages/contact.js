@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import '../styles/form.scss';
 
 export default class Contact extends React.Component {
   
@@ -21,14 +22,12 @@ export default class Contact extends React.Component {
     this.setState({
       [name]: value,
     })
-    console.log(this.state)
   }
 
   handleOptionChange = changeEvent => {
     this.setState({
       option: changeEvent.target.value
     })
-    console.log(this.state)
   }
 
   handleSubmit = event => {
@@ -39,61 +38,81 @@ export default class Contact extends React.Component {
 
   render() {
     return <Layout>
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          名前
-          <input 
-            type="text" 
-            name="contactName" 
-            value={this.state.contactName}
-            onChange={this.handleInputChange} />
-        </label>
-        <label>
-          メールアドレス
-          <input 
-            type="email" 
-            name="email" 
-            value={this.state.email}
-            onChange={this.handleInputChange} />
-        </label>
-        <p>Select an option:</p>
-        <div>
+      <form onSubmit={this.handleSubmit} className="form-wrapper">
+        
+        <div className="form-field">
           <label>
-            Value A
+            <div className="form-label">名前</div>
+            <input 
+              type="text" 
+              name="contactName" 
+              value={this.state.contactName}
+              onChange={this.handleInputChange}
+              className="form-input" />
+          </label>
+        </div>
+        
+        <div className="form-field">
+          <label>
+            <div className="form-label">メールアドレス</div>
+            <input 
+              type="email" 
+              name="email" 
+              value={this.state.email}
+              onChange={this.handleInputChange}
+              className="form-input" />
+          </label>
+        </div>
+        
+        <div className="form-field">
+        <p className="form-label">Select an option:</p>
+          <label>
+            <div className="form-label">Value A</div>
             <input 
               type="radio" 
               name="option" 
               value="value A"
               checked={this.state.option === "value A"}
-              onChange={this.handleOptionChange}/>
+              onChange={this.handleOptionChange}
+              className="form-input" />
           </label>
+        
           <label>
-            Value B
+            <div className="form-label">Value B</div>
             <input 
               type="radio" 
               name="option" 
               value="value B"
               checked={this.state.option === "value B"}
-              onChange={this.handleOptionChange}/>
+              onChange={this.handleOptionChange}
+              className="form-input" />
           </label>
+        
           <label>
-            Value C
+            <div className="form-label">Value C</div>
             <input 
               type="radio" 
               name="option" 
               value="value C"
               checked={this.state.option === "value C"}
-              onChange={this.handleOptionChange}/>
+              onChange={this.handleOptionChange}
+              className="form-input" />
           </label>
+        </div>
+
+        <div className="form-field">
           <label>
-            特記事項
+            <div className="form-label">特記事項</div>
             <input 
               type="textarea" 
               name="message" 
               value={this.state.message}
-            onChange={this.handleInputChange} />
+              onChange={this.handleInputChange}
+              className="form-input" />
           </label>
         </div>
+          
+        
         <button type="submit">Send</button>
       </form>
     </Layout>
