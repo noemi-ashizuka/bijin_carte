@@ -3,6 +3,7 @@ import {graphql, StaticQuery} from 'gatsby';
 import Button from './Button';
 import {Fade} from 'react-reveal';
 import '../styles/gallery.scss';
+import Img from 'gatsby-image';
 
 const Gallery = () => (
   <StaticQuery query={graphql`
@@ -12,8 +13,16 @@ const Gallery = () => (
           node{
             id
             alt_text
-            source_url
             caption
+            localFile{
+              childImageSharp{
+                fixed(width: 300, height: 300){
+                  src
+                  width
+                  height
+                }
+              }
+            }
           }
         }
       }
@@ -28,7 +37,7 @@ const Gallery = () => (
           {props.allWordpressWpMedia.edges.slice(0, 3).map(image =>
             <Fade left duration={1500} key={image.node.id}>
               <div className="gallery-image-box">
-                <img src={image.node.source_url} alt={image.node.alt_text} className="gallery-image" />
+                <Img resolutions={image.node.localFile.childImageSharp.fixed} alt={image.node.alt_text} className="gallery-image" />
                 <p dangerouslySetInnerHTML={{ __html: image.node.caption }}></p>
               </div>
             </Fade>

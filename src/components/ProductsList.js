@@ -5,23 +5,23 @@ import '../styles/productlist.scss';
 
 const ProductsList = () => (
   <StaticQuery query={graphql`
-    {
-      allWordpressWpProduct{
-        edges{
-          node{
-            id
-            slug
-            title
-            excerpt
-            content
-            featured_media{
-              source_url
-              alt_text
-            }
+  {
+    allWordpressWpProduct{
+      edges{
+        node{
+          id
+          slug
+          title
+          excerpt
+          content
+          featured_media{
+            alt_text
+            source_url
           }
         }
       }
     }
+  }
   `} render={props => <div className="list-wrapper">
       <h1 className="list-title">Lessons</h1>
       <h3 className="list-subtitle">あなたの持つ本来の「美」を見つけましょう
