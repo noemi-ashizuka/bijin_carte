@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import Button from '../components/Button';
 import '../styles/form.scss';
 
 export default class Contact extends React.Component {
@@ -38,6 +39,7 @@ export default class Contact extends React.Component {
 
   render() {
     return <Layout>
+      <h1 className="form-title">Contact Us</h1>
       <form onSubmit={this.handleSubmit} className="form-wrapper">
         
         <div className="form-field">
@@ -65,55 +67,54 @@ export default class Contact extends React.Component {
         </div>
         
         <div className="form-field">
-        <p className="form-label">Select an option:</p>
+        
           <label>
-            <div className="form-label">Value A</div>
+            <span className="form-label">Value A</span>
             <input 
               type="radio" 
               name="option" 
               value="value A"
               checked={this.state.option === "value A"}
               onChange={this.handleOptionChange}
-              className="form-input" />
+              className="form-radio" />
           </label>
         
           <label>
-            <div className="form-label">Value B</div>
+            <span className="form-label">Value B</span>
             <input 
               type="radio" 
               name="option" 
               value="value B"
               checked={this.state.option === "value B"}
               onChange={this.handleOptionChange}
-              className="form-input" />
+              className="form-radio" />
           </label>
         
           <label>
-            <div className="form-label">Value C</div>
+            <span className="form-label">Value C</span>
             <input 
               type="radio" 
               name="option" 
               value="value C"
               checked={this.state.option === "value C"}
               onChange={this.handleOptionChange}
-              className="form-input" />
+              className="form-radio" />
           </label>
         </div>
 
         <div className="form-field">
           <label>
             <div className="form-label">特記事項</div>
-            <input 
-              type="textarea" 
+            <textarea 
               name="message" 
               value={this.state.message}
               onChange={this.handleInputChange}
+              rows={5}
+              cols={5}
               className="form-input" />
           </label>
         </div>
-          
-        
-        <button type="submit">Send</button>
+        <Button type="submit" title="Send" />
       </form>
     </Layout>
   }
