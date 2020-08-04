@@ -7,6 +7,7 @@
 
 import React from "react";
 import HeaderMenu from '../components/HeaderMenu';
+import FooterMenu from '../components/FooterMenu';
 import "../styles/layout.scss";
 
 
@@ -16,6 +17,7 @@ const Layout = ({ children }) => (
   <div className='container'>
     {children}
   </div>
+  <FooterMenu />
   </>
 )
    
