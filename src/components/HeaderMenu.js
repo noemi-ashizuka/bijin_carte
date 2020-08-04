@@ -17,6 +17,7 @@ const HeaderMenu = () => (
             items{
               title
               object_slug
+              url
             }
           }
         }
@@ -30,7 +31,12 @@ const HeaderMenu = () => (
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item => 
+              (item.object_slug) ? 
               <Nav.Link href={`/${item.object_slug}` === 'home' ? '/' : `/${item.object_slug}`} key={item.title} className="navbar-menu-item ml-auto m-1">
+                {item.title}
+              </Nav.Link>
+              :
+              <Nav.Link href={`/${item.url}` === 'home' ? '/' : `/${item.url}`} key={item.title} className="navbar-menu-item ml-auto m-1">
                 {item.title}
               </Nav.Link>
             )}
