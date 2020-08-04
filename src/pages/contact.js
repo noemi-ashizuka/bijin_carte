@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Button from '../components/Button';
+import Textarea from 'react-expanding-textarea';
 import '../styles/form.scss';
 
 export default class Contact extends React.Component {
@@ -40,6 +40,7 @@ export default class Contact extends React.Component {
   render() {
     return <Layout>
       <h1 className="form-title">Contact Us</h1>
+      <h3 className="form-subtitle">ちょっとお仕事の連れようでしょ運動もできやっならて、どんなのからお主人議会からありまし。</h3>
       <form onSubmit={this.handleSubmit} className="form-wrapper">
         
         <div className="form-field">
@@ -67,7 +68,7 @@ export default class Contact extends React.Component {
         </div>
         
         <div className="form-field">
-        
+          <p className="form-label">Choose an option</p>
           <label>
             <span className="form-label">Value A</span>
             <input 
@@ -105,7 +106,7 @@ export default class Contact extends React.Component {
         <div className="form-field">
           <label>
             <div className="form-label">特記事項</div>
-            <textarea 
+            <Textarea 
               name="message" 
               value={this.state.message}
               onChange={this.handleInputChange}
@@ -114,7 +115,7 @@ export default class Contact extends React.Component {
               className="form-input" />
           </label>
         </div>
-        <Button type="submit" title="Send" />
+        <button type="submit" className="button-styled-form">Send</button>
       </form>
     </Layout>
   }
