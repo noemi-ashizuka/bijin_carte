@@ -20,22 +20,10 @@
     margin-bottom: 10%;
     margin-top: 5%;
   }
-
-  .list-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }
 
-@media (min-width: 688px) {
-  // .list-wrapper {
-  //   .list-title {
-  //     font-size: 3rem;
-  //   }
-
-  //   .list-subtitle {
-  //     font-size: 0.6rem;
-  //   }
-  // }
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
