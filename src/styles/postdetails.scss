@@ -1,0 +1,40 @@
+.post-details-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  
+  .post-details-left {
+    width: 100%;
+    .post-details-image {
+      width: 100%;
+      margin-top: 3%;
+    }
+  }
+  
+  .post-details-right {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255, 248, 242, 0.7);
+    padding: 24px;
+    .post-details-title {
+      font-family: "rollerscript-rough", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-top: 5%;
+    }
+
+    .post-details-text {
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 5%;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 600px) {
+  
+}
