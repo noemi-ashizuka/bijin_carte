@@ -9,16 +9,16 @@
   .button-text {
     align-self: center;
     color: white;
-    padding-top: 14%;
-    font-size: 0.8rem;
+    padding-top: 10%;
+    // font-size: 0.8rem;
   }
 }
 
 @media (min-width: 900px) {
   .button-standard {
     .button-text {
-      padding-top: 32%;
-      font-size: 0.5rem;
+      //padding-top: 12%;
+      //font-size: 0.5rem;
     }
   }
 }
