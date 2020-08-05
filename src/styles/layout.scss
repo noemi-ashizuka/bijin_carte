@@ -2,7 +2,7 @@
 
 $not-black: rgb(25, 17, 15);
 
-html { font-size: 1vw; }
+html { font-size: 62.5%; }
 
 body {
   background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596027241/bijin%20carte/phone_bg_light_so53mw.jpg),
@@ -14,22 +14,42 @@ body {
   font-family: "kozuka-gothic-pr6n", sans-serif;
   font-weight: 200;
   font-style: normal;
+  font-size: 1.2rem;
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .container {
   padding: 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 688px) {
   
   body {
     background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596027230/bijin%20carte/pc_bg_light_jlw59b.jpg)
     center no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-size: 1.5rem;
+      h1 {
+        font-size: 5rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
   }
 }
 
-@media screen and (min-width: 25em){
-  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
-}
+// @media screen and (min-width: 25em){
+//   html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
+// }
