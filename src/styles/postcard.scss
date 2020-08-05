@@ -28,10 +28,6 @@
         text-align: center;
         padding-left: 24px;
         padding-right: 24px;
-        // font-size: 1.2rem;
-        // h3 {
-        //   font-size: 1.5rem;
-        // }
       }
       
       a {
@@ -55,38 +51,32 @@
 
 @media (min-width: 688px) {
   .post-card-box {
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-top: 3%;
     .post-card-color-box {
+      
       .post-card-right {
-        // .post-card-title {
-        //   font-size: 3em;
-        // }
-    
-        // .post-card-text {
-        //   font-size: 0.8em;
-        //   h3 {
-        //     font-size: 1.2em;
-        //   }
-        // }
+        .post-card-title {
+          text-align: left;
+        }
+
+        .post-card-text {
+          text-align: left;
+        }
+
+        a {
+          text-align: right;
+          margin-left: 70%;
+        }
       }
     }
-  }
-}
 
-@media (min-width: 992px) {
-  .post-card-box {
-    .post-card-color-box {
-      // .post-card-right {
-      //   .post-card-title {
-      //     font-size: 3em;
-      //   }
-    
-      //   .post-card-text {
-      //     font-size: 0.8em;
-      //     h3 {
-      //       font-size: 1.2em;
-      //     }
-      //   }
-      // }
+    .post-card-image {
+      margin-left: -2%;
+      height: 50%;
+      width: 52%;
+      margin-top: 10%;
     }
   }
 }
