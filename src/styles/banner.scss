@@ -112,7 +112,7 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 688px) {
   .banner-box {
     height: 600px;
 
@@ -122,8 +122,8 @@
       padding-top: 120px;
       
       .banner-bold-title {
-        // font-size: 5em;
-        line-height: 15%;
+        font-size: 5em;
+        line-height: 25%;
         text-align: start;
         padding-left: 150px;
       }
