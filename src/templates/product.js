@@ -1,10 +1,17 @@
 import React from 'react'
 import Layout from '../components/layout';
+import Gallery from '../components/Gallery';
+import '../styles/productdetails.scss';
 
 export default ({pageContext}) => (
   <Layout>
-    <h1>{pageContext.title}</h1>
-    <img src={pageContext.featured_media.source_url} alt="product" />
-    <div dangerouslySetInnerHTML={{__html: pageContext.content}} />
+    <div className="product-details-wrapper">
+      <h1 className="product-details-title">{pageContext.title}</h1>
+      <img src={pageContext.featured_media.source_url} alt="product" className="product-details-image" />
+      <div className="product-details-color-box">
+        <div dangerouslySetInnerHTML={{__html: pageContext.content}} className="product-details-text" />
+      </div>
+    </div>
+    <Gallery />
   </Layout>
 );
