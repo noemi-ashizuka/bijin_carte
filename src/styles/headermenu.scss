@@ -1,7 +1,7 @@
 .navbar{
   display: flex;
   width: 100vw;
-  // background-color: rgba(255, 255, 255, 0.0);
+  
   
   .navbar-inner {
     display: flex;
@@ -16,10 +16,32 @@
     opacity: 0.8;
     text-decoration: none;
     padding: 8px 24px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand {
+    font-size: 0.9rem;
   }
 }
 
 .navbar-light {
   background-color: rgba(235, 225, 217, 0.5);
+}
+
+@media (min-width: 600px) {
+  .navbar {
+    .navbar-menu-item {
+    font-size: 0.5em;
+    }
+
+    .navbar-brand {
+      font-size: 0.6em;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .navbar {
+    height: 70px;
+  }
 }
