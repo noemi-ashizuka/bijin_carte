@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Textarea from 'react-expanding-textarea';
+import {Form} from 'react-bootstrap';
 import '../styles/form.scss';
 
 export default class Contact extends React.Component {
@@ -41,71 +42,67 @@ export default class Contact extends React.Component {
     return <Layout>
       <h1 className="form-title">Contact Us</h1>
       <h3 className="form-subtitle">ちょっとお仕事の連れようでしょ運動もできやっならて、どんなのからお主人議会からありまし。</h3>
-      <form onSubmit={this.handleSubmit} className="form-wrapper">
+      <Form onSubmit={this.handleSubmit} className="form-wrapper">
         
-        <div className="form-field">
-          <label>
-            <div className="form-label">名前</div>
-            <input 
+        <Form.Group className="form-field">
+          <Form.Label className="form-label">名前</Form.Label>
+            <Form.Control 
               type="text" 
               name="contactName" 
               value={this.state.contactName}
               onChange={this.handleInputChange}
               className="form-input" />
-          </label>
-        </div>
+        </Form.Group>
         
-        <div className="form-field">
-          <label>
-            <div className="form-label">メールアドレス</div>
-            <input 
+        <Form.Group className="form-field">
+          <Form.Label className="form-label">メールアドレス</Form.Label>
+           <Form.Control 
               type="email" 
               name="email" 
               value={this.state.email}
               onChange={this.handleInputChange}
               className="form-input" />
-          </label>
-        </div>
+        </Form.Group>
+
+        <Form.Group className="form-field">
+          <Form.Text className="form-label form-paragraph">Choose an option</Form.Text>
+        </Form.Group>
         
-        <div className="form-field">
-          <p className="form-label">Choose an option</p>
-          <label>
-            <span className="form-label">Value A</span>
-            <input 
-              type="radio" 
+        {['radio'].map((type) =>(
+          <div key={`inline-${type}`} className="mb-3">
+
+            <Form.Check 
+              inline label="Value A" 
+              type={type} 
+              id={`inline-${type}-1`} 
               name="option" 
               value="value A"
               checked={this.state.option === "value A"}
               onChange={this.handleOptionChange}
               className="form-radio" />
-          </label>
-        
-          <label>
-            <span className="form-label">Value B</span>
-            <input 
-              type="radio" 
+            <Form.Check 
+              inline label="Value B" 
+              type={type} 
+              id={`inline-${type}-2`} 
               name="option" 
               value="value B"
               checked={this.state.option === "value B"}
               onChange={this.handleOptionChange}
               className="form-radio" />
-          </label>
-        
-          <label>
-            <span className="form-label">Value C</span>
-            <input 
-              type="radio" 
+            <Form.Check 
+              inline label="Value C" 
+              type={type} 
+              id={`inline-${type}-3`} 
               name="option" 
               value="value C"
               checked={this.state.option === "value C"}
               onChange={this.handleOptionChange}
               className="form-radio" />
-          </label>
-        </div>
+          </div>
+        ))}
 
-        <div className="form-field">
-          <label>
-            <div className="form-label">特記事項</div>
+        <Form.Group className="form-field">
+          <Form.Label className="form-label">特記事項</Form.Label>
             <Textarea 
               name="message" 
               value={this.state.message}
@@ -113,10 +110,9 @@ export default class Contact extends React.Component {
               rows={5}
               cols={5}
               className="form-input" />
-          </label>
-        </div>
+        </Form.Group>
         <button type="submit" className="button-styled-form">Send</button>
-      </form>
+      </Form>
     </Layout>
   }
 }

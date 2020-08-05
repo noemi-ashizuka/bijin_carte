@@ -25,11 +25,11 @@
 
   .form-field {
     width: 100%;
-    text-align: center;
     
     .form-label {
       opacity: 0.7;
       text-align: left;
+      font-size: 0.9rem;
     }
 
     .form-input {
@@ -37,7 +37,7 @@
       height: 32px;
       padding: 8px;
       border: none;
-      margin-bottom: 16px;
+      //margin-bottom: 16px;
     }
 
     .form-radio {
@@ -60,5 +60,29 @@
     color: white;
     border: none;
     padding: 8px;
+  }
+}
+
+@media (min-width: 600px) {
+  .form-wrapper {
+    width: 100%;
+    .form-field {
+      text-align: left;
+      width: 100%;
+      .form-input {
+        width: 100%;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+      }
+
+      .form-paragraph {
+        text-align: left;
+      }
+
+      .form-label {
+        font-size: 0.5rem;
+      }
+    }
   }
 }
