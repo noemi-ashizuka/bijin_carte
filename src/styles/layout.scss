@@ -2,6 +2,8 @@
 
 $not-black: rgb(25, 17, 15);
 
+html { font-size: 2vw; }
+
 body {
   background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596027241/bijin%20carte/phone_bg_light_so53mw.jpg),
   center no-repeat;
@@ -25,4 +27,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
   }
+}
+
+@media screen and (min-width: 25em){
+  html { font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) ); }
 }

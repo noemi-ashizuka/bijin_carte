@@ -10,7 +10,8 @@ const Banner = () => (
       <div className="banner-bg-image"></div>
       <div className="banner-title">
         <Fade left duration={2000}>
-          <h1 className="banner-bold-title">Find <br /><span className="banner-cursive-title">your beauty</span></h1>
+          <h1 className="banner-bold-title">Find</h1>
+          <h1 className="banner-cursive-title">your beauty</h1>
         </Fade>
         <Fade right delay={1000} duration={1000}>
           <h3 className="banner-subtitle">with 美人カルテ</h3>
