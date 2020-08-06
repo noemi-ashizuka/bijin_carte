@@ -26,16 +26,16 @@ class quizApp extends React.Component {
     })
   };
 
-  computeAnswer = (type) => {
-    if(type === "A") {
+  computeAnswer = (answer) => {
+    if(answer === "A") {
       this.setState({
         typeA: this.state.typeA + 1
       })
-    } else if (type === "B") {
+    } else if (answer === "B") {
       this.setState({
         typeB: this.state.typeB + 1
       })
-    } else if (type ==="C") {
+    } else if (answer ==="C") {
       this.setState({
         typeC: this.state.typeC + 1
       })
@@ -48,7 +48,7 @@ class quizApp extends React.Component {
       questionCount: this.state.questionCount < 3 ? this.state.questionCount + 1 : 3
     })
 
-    console.log(this.state);
+    
   }
 
   componentDidMount() {
@@ -56,6 +56,7 @@ class quizApp extends React.Component {
   }
 
   render() {
+    console.log(this.state);
     return (
       <div>
         {this.state.questions.length > 0 &&
@@ -66,7 +67,7 @@ class quizApp extends React.Component {
                   question={question}
                   answers={answers}
                   key={id}
-                  selected={type => this.computeAnswer(type)}
+                  selected={answer => this.computeAnswer(answer)}
                 />
             )}
       </div>
