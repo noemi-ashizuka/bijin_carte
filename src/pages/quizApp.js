@@ -27,14 +27,21 @@ class quizApp extends React.Component {
     this.setState({
       userAnswers: [...this.state.userAnswers, answer]
     });
+
     this.setState({
-      questionCount: this.state.questionCount < 3 ? this.state.questionCount + 1 : 3
+      questionCount: this.state.questionCount < 5 ? this.state.questionCount + 1 : 3
     })
   }
 
   checkResultType = () => {
-    const max = Math.max(this.state.typeA, this.state.typeB, this.state.typeC, this.state.typeD);
-    
+    const count = this.state.userAnswers.reduce((tally, answer) => {
+      tally[answer] = (tally[answer] || 0) + 1;
+      console.log(tally)
+      return tally;
+    }, {});
+
+    // get the max value and return its key
+    return Object.keys(count).reduce((a, b) => count[a] > count[b] ? a : b);
   }
 
   componentDidMount() {
@@ -46,9 +53,9 @@ class quizApp extends React.Component {
     return (
       <div>
         {this.state.questions.length > 0 &&
-          this.state.questionCount < 3 &&
+          this.state.questionCount < 5 &&
             this.state.questions.map(
-              ({question, answers, type, id}) => 
+              ({question, answers, id}) => 
                 <QuestionBox 
                   question={question}
                   answers={answers}
@@ -56,7 +63,7 @@ class quizApp extends React.Component {
                   selected={answer => this.computeAnswer(answer)}
                 />
             )}
-            {this.state.questionCount === 3 ? (<Result resultType={this.checkResultType()} />) : null }
+            {this.state.questionCount === 5 ? (<Result resultType={this.checkResultType()} />) : null }
       </div>
     )
   }

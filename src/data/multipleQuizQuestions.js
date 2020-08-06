@@ -76,6 +76,58 @@ const MULTIPLE_QUIZ_QUESTIONS = [
         type: "C"
       }
     ]
+  },
+  {
+    id: 4,
+    question: "What's your favorite pet?",
+    answers: [
+      {
+        answerId: 113,
+        content: "Dog",
+        type: "B"
+      },
+      {
+        answerId: 114,
+        content: "Cat",
+        type: "D"
+      },
+      {
+        answerId: 115,
+        content: "Hamster",
+        type: "A"
+      },
+      {
+        answerId: 116,
+        content: "Fish",
+        type: "C"
+      }
+    ]
+  },
+  {
+    id: 5,
+    question: "What's your hobby?",
+    answers: [
+      {
+        answerId: 117,
+        content: "Running or sports",
+        type: "B"
+      },
+      {
+        answerId: 118,
+        content: "Reading or playing games",
+        type: "D"
+      },
+      {
+        answerId: 119,
+        content: "Art and crafts",
+        type: "A"
+      },
+      {
+        answerId: 120,
+        content: "Cooking",
+        type: "C"
+      }
+    ]
   }
 ]
 
