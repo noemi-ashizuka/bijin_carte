@@ -1,4 +1,4 @@
-import React, { UseState } from 'react';
+import React from 'react';
 import MultipleQuizQuestions from '../data/multipleQuizQuestions';
 import QuestionBox from '../components/QuestionBox';
 import Result from '../components/Result';

@@ -53,26 +53,26 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 3,
-    question: "What vacation do you like?",
+    question: "What fruit do you prefer?",
     answers: [
       {
         answerId: 109,
-        content: "Beach",
+        content: "Strawberry",
         type: "B"
       },
       {
         answerId: 110,
-        content: "Mountain",
+        content: "Mango",
         type: "D"
       },
       {
         answerId: 111,
-        content: "City",
+        content: "Orange",
         type: "A"
       },
       {
         answerId: 112,
-        content: "Home",
+        content: "Peach",
         type: "C"
       }
     ]
