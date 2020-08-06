@@ -1,6 +1,7 @@
 import React from 'react';
 import MultipleQuizQuestions from '../data/multipleQuizQuestions';
 import QuestionBox from '../components/QuestionBox';
+import Result from '../components/Result';
 
 class quizApp extends React.Component {
   constructor(props) {
@@ -47,7 +48,10 @@ class quizApp extends React.Component {
     this.setState({
       questionCount: this.state.questionCount < 3 ? this.state.questionCount + 1 : 3
     })
+  }
 
+  checkResultType = () => {
+    const max = Math.max(this.state.typeA, this.state.typeB, this.state.typeC, this.state.typeD);
     
   }
 
@@ -70,6 +74,7 @@ class quizApp extends React.Component {
                   selected={answer => this.computeAnswer(answer)}
                 />
             )}
+            {this.state.questionCount === 3 ? (<Result resultType={this.checkResultType()} />) : null }
       </div>
     )
   }
