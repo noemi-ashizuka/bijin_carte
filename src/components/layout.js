@@ -9,13 +9,16 @@ import React from "react";
 import HeaderMenu from '../components/HeaderMenu';
 import FooterMenu from '../components/FooterMenu';
 import "../styles/layout.scss";
+import SimpleReactLightbox from "simple-react-lightbox";
 
 
 const Layout = ({ children }) => (
   <>
   <HeaderMenu />
   <div className='container'>
-    {children}
+    <SimpleReactLightbox>
+      {children}
+    </SimpleReactLightbox>
   </div>
   <FooterMenu />
   </>

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout';
-import Gallery from '../components/Gallery';
+import GalleryThumb from '../components/GalleryThumb';
 import '../styles/productdetails.scss';
 
 export default ({pageContext}) => (
@@ -12,6 +12,6 @@ export default ({pageContext}) => (
         <div dangerouslySetInnerHTML={{__html: pageContext.content}} className="product-details-text" />
       </div>
     </div>
-    <Gallery />
+    <GalleryThumb />
   </Layout>
 );
