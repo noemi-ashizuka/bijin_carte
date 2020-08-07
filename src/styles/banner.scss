@@ -38,7 +38,6 @@
   position: relative;
 
   .banner-color-box {
-    // background-color: rgba(238, 231, 224, 0.5);
     background-color: rgba(255, 248, 242, 0.7);
     height: 80%;
     width: 100%;
@@ -55,6 +54,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-right: 0;
 
     .banner-bg-image {
       background: linear-gradient(to bottom, rgba(243, 218, 218, 0.4), rgba(221, 178, 178, 0.4)), url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596002225/bijin%20carte/pexels-photo-2395249_g1vpqw.webp)
@@ -78,9 +78,9 @@
         text-transform: uppercase;
         font-weight: 800;
         font-family: 'Limelight', cursive;
-        // font-size: 3rem;
         line-height: 50%;
-        margin-left: 5%;
+        // margin-left: 5%;
+        margin: 0 auto;
       }
 
       .banner-cursive-title {
@@ -88,14 +88,13 @@
         font-family: "rollerscript-rough", sans-serif;
         font-weight: 400;
         font-style: normal;
-        margin-left: 40px;
-        // font-size: 2rem;
+        margin: 0 auto;
+        // margin-left: 40px;
       }
 
       .banner-subtitle {
-        // font-size: 0.6rem;
         text-align: end;
-        margin-left: 160px;
+        margin-left: 10%;
         margin-top: 5%;
         line-height: 2%;
         opacity: 0.8;
@@ -122,26 +121,24 @@
       padding-top: 120px;
       
       .banner-bold-title {
-        font-size: 5em;
-        line-height: 25%;
+        font-size: 4.5em;
         text-align: start;
-        padding-left: 150px;
+        padding-left: 120px;
       }
 
       .banner-cursive-title {
         text-align: end;
-        padding-right: 150px;
-        line-height: 15%;
+        line-height: 50%;
       }
 
       .banner-subtitle {
-        padding-right: 80px;
-        line-height: 15%;
+        text-align: end;
+        // line-height: 20%;
         margin-bottom: 24px;
       }
 
       .banner-button {
-        padding-top: 40px;
+        padding-top: 5%;
       }
     }
   }
@@ -149,15 +146,45 @@
 
 @media (min-width: 922px) {
   .banner-box {
+    margin-left: 3%;
     .banner-title {
     
       .banner-bold-title {
-        font-size: 7em;
+        font-size: 6em;
+        margin: auto 0;
+        //padding-left: 150px;
       }
 
       .banner-cursive-title {
-        font-size: 4em;
+        font-size: 4.5em;
+        padding-right: 80px;
       }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-box {
+    margin-left: 10%;
+    .banner-title {
+
+      .banner-bold-title {
+        font-size: 6em;
+        padding-left: 20%;
+      }
+
+      .banner-cursive-title {
+        padding-right: 20%;
+        font-size: 5em;
+      }
+
+      .banner-subtitle {
+        padding-right: 20%;
+      }
+    }
+
+    .banner-button {
+      padding-top: 0;
     }
   }
 }
