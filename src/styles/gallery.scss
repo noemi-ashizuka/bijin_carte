@@ -37,6 +37,36 @@
       top: 5%;
       z-index: 1;
     }
+
+    .empty-button {
+      display: inline-block;
+      border: none;
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      background: none;
+      font-family: sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      transition: background 150ms ease-in-out, 
+                  transform 150ms ease;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+
+    // .empty-button:hover, .empty-button:focus {
+    //   // background-color: ;
+    // }
+
+    .empty-button:focus {
+      outline: 1px solid #fff;
+      outline-offset: -4px;
+  }
+  
+    .empty-button:active {
+      transform: scale(0.99);
+  }
   }
   
   .gallery-title {
