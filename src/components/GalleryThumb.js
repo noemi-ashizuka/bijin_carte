@@ -5,7 +5,7 @@ import {Fade} from 'react-reveal';
 import '../styles/gallery.scss';
 import Img from 'gatsby-image';
 
-const Gallery = () => (
+const GalleryThumb = () => (
   <StaticQuery query={graphql`
   {
     allWordpressWpMedia{
@@ -49,4 +49,4 @@ const Gallery = () => (
   )} />
 );
 
-export default Gallery;
+export default GalleryThumb;
