@@ -56,8 +56,12 @@
     margin-top: 5%;
   }
 
-  .button-standard {
-    // position: relative;
+  a {
+    text-decoration: none;
     z-index: 1000;
+    .button-standard {
+      // position: relative;
+      z-index: 1000;
+    }
   }
 }
