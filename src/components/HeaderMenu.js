@@ -26,7 +26,7 @@ const HeaderMenu = () => (
   `} 
   render={props => (
     <Navbar expand="lg" sticky="top" className="navbar">
-      <Navbar.Brand href="#home">美人カルテ</Navbar.Brand>
+      <Navbar.Brand href="/home">美人カルテ</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">

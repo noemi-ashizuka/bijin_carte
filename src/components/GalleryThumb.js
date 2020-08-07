@@ -1,5 +1,5 @@
 import React from 'react';
-import {graphql, StaticQuery} from 'gatsby';
+import {graphql, StaticQuery, Link} from 'gatsby';
 import Button from './Button';
 import {Fade} from 'react-reveal';
 import '../styles/gallery.scss';
@@ -44,7 +44,7 @@ const GalleryThumb = () => (
           )}
           <div className="gallery-color-box" />
         </div>
-      <Button title="More" />
+      <Link to='/gallery'><Button title="More" /></Link>
     </div>
   )} />
 );
