@@ -2,6 +2,7 @@ import React from 'react';
 import MultipleQuizQuestions from '../data/multipleQuizQuestions';
 import QuestionBox from '../components/QuestionBox';
 import Result from '../components/Result';
+import '../styles/quizapp.scss';
 
 class quizApp extends React.Component {
   constructor(props) {
@@ -51,7 +52,8 @@ class quizApp extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <div>
+      <div className="quiz-container">
+        <h1 className="quiz-title">Test Title</h1>
         {this.state.questions.length > 0 &&
           this.state.questionCount < 5 &&
             this.state.questions.map(
