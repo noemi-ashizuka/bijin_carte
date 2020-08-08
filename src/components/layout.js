@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react";
+import React, {useEffect} from "react";
 import HeaderMenu from '../components/HeaderMenu';
 import FooterMenu from '../components/FooterMenu';
 import "../styles/layout.scss";
@@ -17,6 +17,9 @@ const Layout = ({ children }) => (
   <HeaderMenu />
   <div className='container'>
     <SimpleReactLightbox>
+      {useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])}
       {children}
     </SimpleReactLightbox>
   </div>
