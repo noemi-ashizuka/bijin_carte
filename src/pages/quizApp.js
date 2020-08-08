@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from '../components/layout';
 import MultipleQuizQuestions from '../data/multipleQuizQuestions';
 import QuestionBox from '../components/QuestionBox';
 import Result from '../components/Result';
@@ -63,22 +64,24 @@ class quizApp extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <div className="quiz-container">
-        <h1 className="quiz-title">Test Title</h1>
-        {this.state.questions.length > 0 &&
-          this.state.questionCount < 5 &&
-            this.state.questions.map(
-              ({question, answers, id, img_url}) => 
-                <QuestionBox 
-                  question={question}
-                  answers={answers}
-                  imageUrl={img_url}
-                  key={id}
-                  selected={answer => this.computeAnswer(answer)}
-                />
-            )}
-            {this.state.questionCount === 5 ? (<Result resultType={this.checkResultType()} />) : null }
-      </div>
+      <Layout>
+        <div className="quiz-container">
+          <h1 className="quiz-title">Test Title</h1>
+          {this.state.questions.length > 0 &&
+            this.state.questionCount < 5 &&
+              this.state.questions.map(
+                ({question, answers, id, img_url}) => 
+                  <QuestionBox 
+                    question={question}
+                    answers={answers}
+                    imageUrl={img_url}
+                    key={id}
+                    selected={answer => this.computeAnswer(answer)}
+                  />
+              )}
+              {this.state.questionCount === 5 ? (<Result resultType={this.checkResultType()} />) : null }
+        </div>
+      </Layout>
     )
   }
 }
