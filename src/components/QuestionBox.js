@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import Button from './Button';
 
 // hooks for use state: double disables button after click, answer makes other choices disappear
-const QuestionBox = ({ question, answers, selected }) => {
+const QuestionBox = ({ question, answers, selected, imageUrl }) => {
   const[answer, setAnswer] = useState(answers);
   const [double, setDouble] = useState(false);
   return (
     <div className="question-wrapper">
+      <img src={imageUrl} alt="make up" className="question-image" />
       <div className="question-container">{question}</div>
       <div className="answers-container">
         {answer.map( option => (
