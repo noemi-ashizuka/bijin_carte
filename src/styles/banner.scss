@@ -152,7 +152,6 @@
       .banner-bold-title {
         font-size: 6em;
         margin: auto 0;
-        //padding-left: 150px;
       }
 
       .banner-cursive-title {
@@ -166,6 +165,13 @@
 @media (min-width: 1200px) {
   .banner-box {
     margin-left: 10%;
+
+    .banner-image-box {
+      .banner-bg-image {
+        left: 0;
+        right: 8%;
+      }
+    }
     .banner-title {
 
       .banner-bold-title {
