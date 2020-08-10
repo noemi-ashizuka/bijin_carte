@@ -58,7 +58,7 @@ class quizApp extends React.Component {
 
   componentDidMount() {
     this.getQuestions();
-    this.getImagesUrls();
+    //this.getImagesUrls();
   }
 
   render() {

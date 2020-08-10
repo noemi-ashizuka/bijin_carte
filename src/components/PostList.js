@@ -5,23 +5,29 @@ import '../styles/postlist.scss'
 
 const PostList = () => (
   <StaticQuery query={graphql`
-    {
-      allWordpressPost{
-        edges{
-          node{
-            id
-            slug
-            content
-            title
-            excerpt
-            featured_media{
-              source_url
-              alt_text
-            }
+  {
+    allWordpressPost(filter: {
+      tags: {
+        elemMatch: {
+          name: {eq: "homepage"}
+        }
+      }
+    }) {
+      edges {
+        node {
+          id
+          slug
+          content
+          title
+          excerpt
+          featured_media {
+            source_url
+            alt_text
           }
         }
       }
     }
+  }
  `} render={props => <div className="post-cards-wrapper">
   {props.allWordpressPost.edges.map(post => 
     <PostCard {...post} key={post.node.id} />
