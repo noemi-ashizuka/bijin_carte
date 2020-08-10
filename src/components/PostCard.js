@@ -9,7 +9,8 @@ const PostCard = (props) => (
       }
       <div className="post-card-color-box">
         <div className="post-card-right">
-          <h1 className="post-card-title">{props.node.title}</h1>
+          {/* <h1 className="post-card-title">{props.node.title}</h1> */}
+          <img src="https://res.cloudinary.com/dtewjoisz/image/upload/v1597047545/bijin%20carte/your_beauty_wapear.png" alt="title" className="post-card-title-image" />
           <div className="post-card-text" dangerouslySetInnerHTML={{__html: props.node.excerpt }} />
           <Link to={`/post/${props.node.slug}`}>Read More</Link>
         </div>
