@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout';
-import GalleryThumb from '../components/GalleryThumb';
+// import GalleryThumb from '../components/GalleryThumb';
 import '../styles/productdetails.scss';
 
 export default ({pageContext}) => (
@@ -12,6 +12,12 @@ export default ({pageContext}) => (
         <div dangerouslySetInnerHTML={{__html: pageContext.content}} className="product-details-text" />
       </div>
     </div>
-    <GalleryThumb />
+    {pageContext.acf.image &&
+      <div>
+        <img src={pageContext.acf.image.localFile.childImageSharp.fluid.src}></img>
+        <img src={pageContext.acf.image_2.localFile.childImageSharp.fluid.src}></img>
+        <img src={pageContext.acf.image_3.localFile.childImageSharp.fluid.src}></img>
+      </div>
+    }
   </Layout>
 );

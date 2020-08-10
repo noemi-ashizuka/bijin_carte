@@ -85,6 +85,50 @@ exports.createPages = ({ graphql, actions }) => {
                     featured_media{
                       source_url
                     }
+                    acf{
+                      image{
+                        id
+                        alt_text
+                        caption
+                        localFile{
+                          childImageSharp{
+                            fluid(quality: 100, maxWidth:500, maxHeight:500){
+                              src
+                              presentationWidth
+                              presentationHeight
+                            }
+                          }
+                        }
+                      }
+                      image_2{
+                        id
+                        alt_text
+                        caption
+                        localFile{
+                          childImageSharp{
+                            fluid(quality: 100, maxWidth:500, maxHeight:500){
+                              src
+                              presentationWidth
+                              presentationHeight
+                            }
+                          }
+                        }
+                      }
+                      image_3{
+                        id
+                        alt_text
+                        caption
+                        localFile{
+                          childImageSharp{
+                            fluid(quality: 100, maxWidth:500, maxHeight:500){
+                              src
+                              presentationWidth
+                              presentationHeight
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
