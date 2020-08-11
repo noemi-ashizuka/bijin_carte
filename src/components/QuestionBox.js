@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from './Button';
+// import Button from './Button';
 
 // hooks for use state: double disables button after click, answer makes other choices disappear
 const QuestionBox = ({ question, answers, selected, imageUrl }) => {
