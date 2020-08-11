@@ -11,7 +11,6 @@ class quizApp extends React.Component {
 
     this.state= {
       questions: [],
-      // imagesUrls: [],
       questionCount: 0,
       userAnswers: []
     }
@@ -25,15 +24,6 @@ class quizApp extends React.Component {
       });
     })
   };
-
-  // getImagesUrls = () => {
-  //   MultipleQuizQuestions().then(imageUrl => {
-  //     console.log(imageUrl)
-  //     this.setState({
-  //       imagesUrls: imageUrl
-  //     })
-  //   })
-  // };
 
   computeAnswer = (answer) => {
     this.setState({
@@ -58,7 +48,6 @@ class quizApp extends React.Component {
 
   componentDidMount() {
     this.getQuestions();
-    //this.getImagesUrls();
   }
 
   render() {

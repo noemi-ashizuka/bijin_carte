@@ -59,3 +59,19 @@
   }
 }
 
+@media (min-width: 688px) {
+  .quiz-container {
+    display: block;
+    .question-wrapper {
+      flex-direction: row;
+      .question-image {
+        width: 40%;
+      }
+
+      .text-wrapper {
+        margin: auto 0;
+        margin-left: 5%;
+      }
+    }
+  }
+}
