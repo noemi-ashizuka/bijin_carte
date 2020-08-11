@@ -11,7 +11,9 @@ const PostCard = (props) => (
         <div className="post-card-right">
           <h1 className="post-card-title">{props.node.title}</h1>
           <div className="post-card-text" dangerouslySetInnerHTML={{__html: props.node.excerpt }} />
-          <Link to={`/post/${props.node.slug}`}>Read More</Link>
+          {props.node.slug === "about" &&
+            <Link to={`/post/${props.node.slug}`}>黄金比とは？</Link>
+          }
         </div>
       </div>
     </div>

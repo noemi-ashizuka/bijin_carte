@@ -120,7 +120,7 @@ export default class Contact extends React.Component {
         ))}
 
         <Form.Group className="form-field">
-          <Form.Label className="form-label">特記事項</Form.Label>
+          <Form.Label className="form-label">本文</Form.Label>
             <Textarea 
               name="message" 
               value={this.state.message}
