@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from './Button';
+// import Button from './Button';
 
 // hooks for use state: double disables button after click, answer makes other choices disappear
 const QuestionBox = ({ question, answers, selected, imageUrl }) => {
@@ -8,20 +8,22 @@ const QuestionBox = ({ question, answers, selected, imageUrl }) => {
   return (
     <div className="question-wrapper">
       <img src={imageUrl} alt="make up" className="question-image" />
+    <div className="text-wrapper">
       <div className="question-container">{question}</div>
-      <div className="answers-container">
-        {answer.map( option => (
-          <button 
-            key={option.answerId}
-            disabled={double}
-            onClick={() => {
-              setAnswer([option]);
-              selected(option.type);
-              setDouble(true);
-            }} className="answer-option">
-            {option.content}
-          </button>
-        ))}
+        <div className="answers-container">
+          {answer.map( option => (
+            <button 
+              key={option.answerId}
+              disabled={double}
+              onClick={() => {
+                setAnswer([option]);
+                selected(option.type);
+                setDouble(true);
+              }} className="answer-option">
+              {option.content}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   )
