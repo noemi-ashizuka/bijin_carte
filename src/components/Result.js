@@ -26,25 +26,28 @@ const Result = ({resultType}) => (
           <img src="https://images.unsplash.com/photo-1538580619159-6c19131e1062?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="fall leaves" className="quiz-result-image" />
           <p className="quiz-result-text">黄みで暗くシックな色</p>
         </div>
-        <FacebookShareButton
-          url="http://google.com"
-          children={<FontAwesomeIcon
-            icon={faFacebookSquare}
-            className="quiz-share-icon" 
-            />}
-          quote="B: イエベ秋"
-          hashtag="findyourbeauty"
-        />
-        <TwitterShareButton
-          url="http://google.com"
-          children={<FontAwesomeIcon 
-            icon={faTwitterSquare}
-            className="quiz-share-icon"
-            />} className="quiz-result-title"
-          title="B: イエベ秋"
-          via="bijin_carte"
-          hashtags={["bijincarte", "findyourbeauty"]}
-        />
+        <div className="quiz-icons-wrapper">
+          <h3 className="quiz-icons-title">結果をシェアする</h3>
+          <FacebookShareButton
+            url="http://google.com"
+            children={<FontAwesomeIcon
+              icon={faFacebookSquare}
+              className="quiz-share-icon" 
+              />}
+            quote="B: イエベ秋"
+            hashtag="findyourbeauty"
+          />
+          <TwitterShareButton
+            url="http://google.com"
+            children={<FontAwesomeIcon 
+              icon={faTwitterSquare}
+              className="quiz-share-icon"
+              />} className="quiz-result-title"
+            title="B: イエベ秋"
+            via="bijin_carte"
+            hashtags={["bijincarte", "findyourbeauty"]}
+          />
+        </div>
       </div>
     }
     {resultType === "C" &&
