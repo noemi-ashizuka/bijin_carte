@@ -9,7 +9,11 @@ import Img from 'gatsby-image';
 const Gallery= () => (
   <StaticQuery query={graphql`
   {
-    allWordpressWpMedia{
+    allWordpressWpMedia(filter: {
+      title: {
+        ne: "website image"
+      }
+    }){
       edges{
         node{
           id

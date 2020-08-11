@@ -8,7 +8,11 @@ import Img from 'gatsby-image';
 const GalleryThumb = () => (
   <StaticQuery query={graphql`
   {
-    allWordpressWpMedia{
+    allWordpressWpMedia(filter: {
+      title: {
+        eq: "homep"
+      }
+    }){
       edges{
         node{
           id
@@ -34,7 +38,7 @@ const GalleryThumb = () => (
       <h3 className="gallery-subtitle">各メニューのサンプルのスライドショー</h3>
       
         <div className="gallery-container">
-          {props.allWordpressWpMedia.edges.slice(0, 3).map(image =>
+          {props.allWordpressWpMedia.edges.map(image =>
             <Fade left duration={1500} key={image.node.id}>
               <div className="gallery-image-box">
                 <Img resolutions={image.node.localFile.childImageSharp.fluid} alt={image.node.alt_text} className="gallery-image" />
