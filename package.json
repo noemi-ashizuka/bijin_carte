@@ -29,6 +29,7 @@
     "react-expanding-textarea": "^2.2.0",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
+    "react-share": "^4.2.1",
     "simple-react-lightbox": "^3.2.3-3"
   },
   "devDependencies": {
