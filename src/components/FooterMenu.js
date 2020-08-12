@@ -15,6 +15,7 @@ const FooterMenu = () => (
         edges{
           node{
             items{
+              object_id
               title
               object_slug
               url
@@ -27,7 +28,7 @@ const FooterMenu = () => (
   <div className="footer-menu-box">
     <div className="footer-text-links">
       {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item =>
-        <a href={`/${item.object_slug}` === 'home' ? '/' : `/${item.object_slug}`} className="footer-link">{item.title}</a>
+        <a href={`/${item.object_slug}` === 'home' ? '/' : `/${item.object_slug}`} key={item.object_id} className="footer-link">{item.title}</a>
       )}
     </div>
     <div className="footer-icons">
