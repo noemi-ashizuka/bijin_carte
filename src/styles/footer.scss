@@ -18,7 +18,10 @@
     .footer-link {
       opacity: 50%;
       padding-right: 16px;
-      // font-family: 'Noto Sans JP', sans-serif;
+      display: block;
+      line-height: 24px;
+      text-decoration: none;
+      color: rgb(25, 17, 15);
     }
    }
 
