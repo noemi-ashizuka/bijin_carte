@@ -18,7 +18,6 @@ class quizApp extends React.Component {
 
   getQuestions = () => {
     MultipleQuizQuestions().then(question => {
-      console.log(question)
       this.setState({
         questions: question
       });
@@ -51,7 +50,6 @@ class quizApp extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <Layout>
         <div className="quiz-container">

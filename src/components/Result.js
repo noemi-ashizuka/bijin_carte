@@ -137,7 +137,6 @@ const Result = ({resultType}) => (
     }
 
   </div>
-  
 )
 
 export default Result;
