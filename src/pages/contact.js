@@ -41,8 +41,8 @@ export default class Contact extends React.Component {
   render() {
     return <Layout>
       <h1 className="form-title">Contact Us</h1>
-      <h3 className="form-subtitle">あなたの綺麗を見つけるお手伝い</h3>
-      <p className="form-subtitle">ご予約はもちろん、レッスン内容などに関するお問い合わせも、お気軽にお問い合わせください。取材や撮影のご依頼もこちらからお願いいたします。</p>
+      {/* <h3 className="form-subtitle">あなたの綺麗を見つけるお手伝い</h3> */}
+      <p className="form-subtitle"><span>あなたの綺麗を見つけるお手伝い</span> <br></br> ご予約はもちろん、レッスン内容などに関するお問い合わせも、お気軽にお問い合わせください。取材や撮影のご依頼もこちらからお願いいたします。</p>
       <Form onSubmit={this.handleSubmit} className="form-wrapper">
         
         <Form.Group className="form-field">
