@@ -1,10 +1,7 @@
 import React, { useEffect } from 'react';
 // import Button from './Button';
 import { faTwitterSquare, faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
-import {
-  FacebookShareButton,
-  TwitterShareButton
-} from 'react-share';
+import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon} from 'react-share';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/result.scss';
 
@@ -24,19 +21,14 @@ const Result = ({resultType}) => (
           <h3 className="quiz-icons-title">結果をシェアする</h3>
           <FacebookShareButton
             url="http://google.com"
-            children={<FontAwesomeIcon
-              icon={faFacebookSquare}
-              className="quiz-share-icon" 
-              />}
+            children={<FacebookIcon size={40} className="quiz-share-icon" />}
             quote="A: イエベ春"
             hashtag="findyourbeauty"
           />
           <TwitterShareButton
             url="http://google.com"
-            children={<FontAwesomeIcon 
-              icon={faTwitterSquare}
-              className="quiz-share-icon"
-              />} className="quiz-result-title"
+            children={<TwitterIcon size={40} className="quiz-share-icon" />} 
+            className="quiz-result-title"
             title="A: イエベ春"
             via="bijin_carte"
             hashtags={["bijincarte", "findyourbeauty"]}
@@ -55,19 +47,14 @@ const Result = ({resultType}) => (
           <h3 className="quiz-icons-title">結果をシェアする</h3>
           <FacebookShareButton
             url="http://google.com"
-            children={<FontAwesomeIcon
-              icon={faFacebookSquare}
-              className="quiz-share-icon" 
-              />}
+            children={<FacebookIcon size={40} className="quiz-share-icon" />}
             quote="B: イエベ秋"
             hashtag="findyourbeauty"
           />
           <TwitterShareButton
             url="http://google.com"
-            children={<FontAwesomeIcon 
-              icon={faTwitterSquare}
-              className="quiz-share-icon"
-              />} className="quiz-result-title"
+            children={<TwitterIcon size={40} className="quiz-share-icon" />}
+            className="quiz-result-title"
             title="B: イエベ秋"
             via="bijin_carte"
             hashtags={["bijincarte", "findyourbeauty"]}
@@ -86,19 +73,14 @@ const Result = ({resultType}) => (
           <h3 className="quiz-icons-title">結果をシェアする</h3>
           <FacebookShareButton
             url="http://google.com"
-            children={<FontAwesomeIcon
-              icon={faFacebookSquare}
-              className="quiz-share-icon" 
-              />}
+            children={<FacebookIcon size={40} className="quiz-share-icon" />}
             quote="C: ブルベ夏"
             hashtag="findyourbeauty"
           />
           <TwitterShareButton
             url="http://google.com"
-            children={<FontAwesomeIcon 
-              icon={faTwitterSquare}
-              className="quiz-share-icon"
-              />} className="quiz-result-title"
+            children={<TwitterIcon size={40} className="quiz-share-icon" />}
+            className="quiz-result-title"
             title="C: ブルベ夏"
             via="bijin_carte"
             hashtags={["bijincarte", "findyourbeauty"]}
@@ -117,19 +99,14 @@ const Result = ({resultType}) => (
           <h3 className="quiz-icons-title">結果をシェアする</h3>
           <FacebookShareButton
             url="http://google.com"
-            children={<FontAwesomeIcon
-              icon={faFacebookSquare}
-              className="quiz-share-icon" 
-              />}
+            children={<FacebookIcon size={40} className="quiz-share-icon" />}
             quote="D: ブルベ冬"
             hashtag="findyourbeauty"
           />
           <TwitterShareButton
             url="http://google.com"
-            children={<FontAwesomeIcon 
-              icon={faTwitterSquare}
-              className="quiz-share-icon"
-              />} className="quiz-result-title"
+            children={<TwitterIcon size={40} className="quiz-share-icon" />} 
+            className="quiz-result-title"
             title="D: ブルベ冬"
             via="bijin_carte"
             hashtags={["bijincarte", "findyourbeauty"]}

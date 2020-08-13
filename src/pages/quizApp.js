@@ -31,7 +31,7 @@ class quizApp extends React.Component {
     });
 
     this.setState({
-      questionCount: this.state.questionCount < 5 ? this.state.questionCount + 1 : 3
+      questionCount: this.state.questionCount < 9 ? this.state.questionCount + 1 : 3
     })
   }
 
@@ -57,7 +57,7 @@ class quizApp extends React.Component {
         <div className="quiz-container">
           <h1 className="quiz-title">Personal Color</h1>
           {this.state.questions.length > 0 &&
-            this.state.questionCount < 5 &&
+            this.state.questionCount < 9 &&
               this.state.questions.map(
                 ({question, answers, id, img_url}) => 
                   <QuestionBox 
@@ -68,7 +68,7 @@ class quizApp extends React.Component {
                     selected={answer => this.computeAnswer(answer)}
                   />
               )}
-              {this.state.questionCount === 5 ? (<Result resultType={this.checkResultType()} />) : null }
+              {this.state.questionCount === 9 ? (<Result resultType={this.checkResultType()} />) : null }
         </div>
       </Layout>
     )
