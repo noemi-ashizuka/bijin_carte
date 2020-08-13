@@ -1,4 +1,5 @@
 const MULTIPLE_QUIZ_QUESTIONS = [
+  // all images should be changed with links to wp media or other hosting in production
   {
     id: 1,
     img_url: "https://images.unsplash.com/photo-1576426863848-c21f53c60b19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
@@ -246,3 +247,4 @@ const MULTIPLE_QUIZ_QUESTIONS = [
 
 export default () =>
   Promise.resolve(MULTIPLE_QUIZ_QUESTIONS);
+  
