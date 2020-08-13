@@ -47,9 +47,21 @@ exports.createPages = ({ graphql, actions }) => {
         // Create Page pages.
         const pageTemplate = path.resolve("./src/templates/page.js")
         const homepageCustomPosts = path.resolve("./src/templates/homepageCustomPosts.js")
+        const lessonsUnderContent = path.resolve("./src/templates/lessonsUnderContent.js")
         // We want to create a detailed page for each
         // page node. We'll just use the WordPress Slug for the slug.
         // The Page ID is prefixed with 'PAGE_'
+        checkTemplate = (edge) => {
+          if (edge.node.template === 'homepage_template_custom_posts.php') {
+            return homepageCustomPosts
+          } else if (edge.node.template === 'lessons_under_content.php') {
+            return lessonsUnderContent
+          }
+          else {
+            return pageTemplate
+          }
+        }
+
         _.each(result.data.allWordpressPage.edges, edge => {
           // Gatsby uses Redux to manage its internal state.
           // Plugins and sites can use functions like "createPage"
@@ -61,7 +73,7 @@ exports.createPages = ({ graphql, actions }) => {
             // optional but is often necessary so the template
             // can query data specific to each page.
             path: `/${edge.node.slug}/`,
-            component: slash(edge.node.template === 'homepage_template_custom_posts.php' ? homepageCustomPosts : pageTemplate),
+            component: slash(checkTemplate(edge)),
             context: edge.node,
           })
         })
