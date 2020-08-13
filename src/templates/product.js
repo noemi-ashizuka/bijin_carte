@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout';
-// import GalleryThumb from '../components/GalleryThumb';
+import GalleryPost from '../components/GalleryPost';
 import '../styles/productdetails.scss';
 
 export default ({pageContext}) => (
@@ -15,11 +15,12 @@ export default ({pageContext}) => (
       </div>
     </div>
     {pageContext.acf.image &&
-      <div>
-        <img src={pageContext.acf.image.localFile.childImageSharp.fluid.src}></img>
-        <img src={pageContext.acf.image_2.localFile.childImageSharp.fluid.src}></img>
-        <img src={pageContext.acf.image_3.localFile.childImageSharp.fluid.src}></img>
-      </div>
+      <GalleryPost imgOne={pageContext.acf.image} imgTwo={pageContext.acf.image_2} imgThree={pageContext.acf.image_3} />
+      // <div>
+      //   <img src={pageContext.acf.image.localFile.childImageSharp.fluid.src}></img>
+      //   <img src={pageContext.acf.image_2.localFile.childImageSharp.fluid.src}></img>
+      //   <img src={pageContext.acf.image_3.localFile.childImageSharp.fluid.src}></img>
+      // </div>
     }
   </Layout>
 );
