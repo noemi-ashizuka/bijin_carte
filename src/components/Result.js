@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
-// import Button from './Button';
-import { faTwitterSquare, faFacebookSquare} from '@fortawesome/free-brands-svg-icons';
 import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon} from 'react-share';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/result.scss';
 
 const Result = ({resultType}) => (

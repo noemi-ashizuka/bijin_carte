@@ -99,6 +99,7 @@ exports.createPages = ({ graphql, actions }) => {
                     excerpt
                     content
                     featured_media{
+                      alt_text
                       source_url
                     }
                     acf{
