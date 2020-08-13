@@ -136,7 +136,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 6,
-    img_url: "https://images.unsplash.com/photo-1526758097130-bab247274f58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    img_url: "https://images.unsplash.com/photo-1582616698198-f978da534162?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     question: "肌がきれいに見えるアクセサリーは？\n ※アクセサリーがない場合は、きれいな1円玉と5円玉を手の甲に乗せて比べてください\n（5円玉の場合は、AかB。艶ありか無しで選んでみてください。1円玉の場合は、CかD。艶ありか無しで選んでみてください。）",
     answers: [
       {
@@ -163,7 +163,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 7,
-    img_url: "https://images.unsplash.com/photo-1526758097130-bab247274f58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    img_url: "https://images.unsplash.com/photo-1506003094589-53954a26283f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     question: "身近な人に褒められるファッションカラー・口紅の色は？",
     answers: [
       {
@@ -190,7 +190,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 8,
-    img_url: "https://images.unsplash.com/photo-1526758097130-bab247274f58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    img_url: "https://images.unsplash.com/photo-1542833807-ad5af0977050?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     question: "自分で苦手意識のあるリップは？",
     answers: [
       {
@@ -217,7 +217,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 9,
-    img_url: "https://images.unsplash.com/photo-1526758097130-bab247274f58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    img_url: "https://images.unsplash.com/photo-1500840216050-6ffa99d75160?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     question: "周りから見たあなたの第一印象は？",
     answers: [
       {
