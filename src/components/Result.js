@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FacebookShareButton, TwitterShareButton, FacebookIcon, TwitterIcon} from 'react-share';
+import { FacebookShareButton, TwitterShareButton, PinterestShareButton, PinterestIcon, FacebookIcon, TwitterIcon} from 'react-share';
 import '../styles/result.scss';
 
 const Result = ({resultType}) => (
@@ -30,6 +30,12 @@ const Result = ({resultType}) => (
             via="bijin_carte"
             hashtags={["bijincarte", "findyourbeauty"]}
           />
+          <PinterestShareButton
+            url="http://google.com"
+            children={<PinterestIcon size={40} className="quiz-share-icon" />}
+            media={"https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"}
+            description={"This is my result"}
+          />
         </div>
       </div>
     }
@@ -55,6 +61,12 @@ const Result = ({resultType}) => (
             title="B: イエベ秋"
             via="bijin_carte"
             hashtags={["bijincarte", "findyourbeauty"]}
+          />
+          <PinterestShareButton
+            url="http://google.com"
+            children={<PinterestIcon size={40} className="quiz-share-icon" />}
+            media={"https://images.unsplash.com/photo-1538580619159-6c19131e1062?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"}
+            description={"This is my result"}
           />
         </div>
       </div>
@@ -82,6 +94,12 @@ const Result = ({resultType}) => (
             via="bijin_carte"
             hashtags={["bijincarte", "findyourbeauty"]}
           />
+          <PinterestShareButton
+            url="http://google.com"
+            children={<PinterestIcon size={40} className="quiz-share-icon" />}
+            media={"https://images.unsplash.com/photo-1534237649404-2cc344128fdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"}
+            description={"This is my result"}
+          />
         </div>
       </div>
     }
@@ -107,6 +125,12 @@ const Result = ({resultType}) => (
             title="D: ブルベ冬"
             via="bijin_carte"
             hashtags={["bijincarte", "findyourbeauty"]}
+          />
+          <PinterestShareButton
+            url="http://google.com"
+            children={<PinterestIcon size={40} className="quiz-share-icon" />}
+            media={"https://images.unsplash.com/photo-1534237649404-2cc344128fdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"}
+            description={"This is my result"}
           />
         </div>
       </div>
