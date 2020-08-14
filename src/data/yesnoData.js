@@ -19,6 +19,7 @@ const YES_NO = [
   {
     id: 2,
     question: "目元、口元など皮膚の薄いところが乾燥しがち",
+    imgUrl: "https://images.unsplash.com/photo-1569512756636-2100074a089e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     answers: [
       {
         answerId: 102,
@@ -35,6 +36,7 @@ const YES_NO = [
   {
     id: 3,
     question: "T ゾーンの化粧崩れがしやすい",
+    imgUrl: "https://images.unsplash.com/photo-1578323851363-cf6a1a6afbb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     answers: [
       {
         answerId: 104,
@@ -51,6 +53,7 @@ const YES_NO = [
   {
     id: 4,
     question: "１日中顔のお肌のかさつきが気になる",
+    imgUrl: "https://images.unsplash.com/photo-1498843053639-170ff2122f35?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     answers: [
       {
         answerId: 104,
@@ -67,6 +70,7 @@ const YES_NO = [
   {
     id: 5,
     question: "日焼けや汗をかいた時季節の変化など、外的要因で痒みやヒリヒリ感を感じやすい",
+    imgUrl: "https://images.unsplash.com/photo-1533093818119-ac1fa47a6d59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     answers: [
       {
         answerId: 104,
@@ -83,6 +87,7 @@ const YES_NO = [
   {
     id: 6,
     question: "目元、口元など皮膚の薄いところの乾燥が気になる",
+    imgUrl: "https://images.unsplash.com/photo-1465426721606-27b1239015fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     answers: [
       {
         answerId: 104,
@@ -99,6 +104,7 @@ const YES_NO = [
   {
     id: 7,
     question: "頬がベタつき、毛穴の開きが気になる",
+    imgUrl: "https://images.unsplash.com/photo-1555050455-f96634b5cba6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     answers: [
       {
         answerId: 104,
