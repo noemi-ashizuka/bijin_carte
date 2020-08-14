@@ -22,9 +22,7 @@ class YesNoShindan extends React.Component {
   }
 
   updateQuestion = (nextId) => {
-    console.log(nextId)
     YesNo().then(question => {
-      console.log(question[nextId - 1])
       this.setState({
         currentQuestion: question[nextId - 1].question,
         currentAnswers: question[nextId - 1].answers
