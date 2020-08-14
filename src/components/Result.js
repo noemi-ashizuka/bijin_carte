@@ -10,7 +10,7 @@ const Result = ({resultType}) => (
     {resultType === "A" &&
       <div className="quiz-result-container">
         <h1 className="quiz-result-title">A: イエベ春</h1>
-        <div className="quiz-result-color-box-spring">
+        <div className="quiz-result-color-box" style={{backgroundColor: 'rgba(254, 217, 22, 0.7)'}}>
           <img src="https://res.cloudinary.com/dtewjoisz/image/upload/v1597370187/bijin%20carte/spring_ubjqis.jpg" alt="spring color chart" className="quiz-result-image" />
           <p className="quiz-result-text">黄みで明るくクリアな色</p>
         </div>
