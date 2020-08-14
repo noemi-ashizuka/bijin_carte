@@ -1,7 +1,7 @@
 const YES_NO = [
   {
     id: 1,
-    question: "Do you like coffee?",
+    question: "洗顔や入浴の後、お肌につっぱり感を感じますか？",
     answers: [
       {
         answerId: 100,
@@ -17,44 +17,28 @@ const YES_NO = [
   },
   {
     id: 2,
-    question: "Do you like tea?",
+    question: "目元、口元など皮膚の薄いところが乾燥しがち",
     answers: [
       {
         answerId: 102,
         content: "Yes",
-        nextId: 1
+        nextId: 4
       },
       {
         answerId: 103,
         content: "No",
-        nextId: 3
+        nextId: 5
       }
     ]
   },
   {
     id: 3,
-    question: "Do you like ice cream?",
+    question: "T ゾーンの化粧崩れがしやすい",
     answers: [
       {
         answerId: 104,
         content: "Yes",
-        nextId: 4
-      },
-      {
-        answerId: 105,
-        content: "No",
-        nextId: 2
-      }
-    ]
-  },
-  {
-    id: 4,
-    question: "Do you like apples?",
-    answers: [
-      {
-        answerId: 104,
-        content: "Yes",
-        nextId: 5
+        nextId: 7
       },
       {
         answerId: 105,
@@ -64,38 +48,91 @@ const YES_NO = [
     ]
   },
   {
+    id: 4,
+    question: "１日中顔のお肌のかさつきが気になる",
+    answers: [
+      {
+        answerId: 104,
+        content: "Yes",
+        nextId: 8
+      },
+      {
+        answerId: 105,
+        content: "No",
+        nextId: 9
+      }
+    ]
+  },
+  {
     id: 5,
-    question: "This is result 1",
-    // answers: [
-    //   {
-    //     answerId: 104,
-    //     content: "Yes",
-    //     nextId: 1
-    //   },
-    //   {
-    //     answerId: 105,
-    //     content: "No",
-    //     nextId: 3
-    //   }
-    // ]
+    question: "日焼けや汗をかいた時季節の変化など、外的要因で痒みやヒリヒリ感を感じやすい",
+    answers: [
+      {
+        answerId: 104,
+        content: "Yes",
+        nextId: 9
+      },
+      {
+        answerId: 105,
+        content: "No",
+        nextId: 10
+      }
+    ]
   },
   {
     id: 6,
-    question: "this is result 2",
-    // answers: [
-    //   {
-    //     answerId: 104,
-    //     content: "Yes",
-    //     nextId: 1
-    //   },
-    //   {
-    //     answerId: 105,
-    //     content: "No",
-    //     nextId: 3
-    //   }
-    // ]
-  }
+    question: "目元、口元など皮膚の薄いところの乾燥が気になる",
+    answers: [
+      {
+        answerId: 104,
+        content: "Yes",
+        nextId: 11
+      },
+      {
+        answerId: 105,
+        content: "No",
+        nextId: 10
+      }
+    ]
+  },
+  {
+    id: 7,
+    question: "頬がベタつき、毛穴の開きが気になる",
+    answers: [
+      {
+        answerId: 104,
+        content: "Yes",
+        nextId: 12
+      },
+      {
+        answerId: 105,
+        content: "No",
+        nextId: 11
+      }
+    ]
+  },
+  {
+    id: 8,
+    question: "Result 1",
+  },
+  {
+    id: 9,
+    question: "Result 2",
+  },
+  {
+    id: 10,
+    question: "Result 3",
+  },
+  {
+    id: 11,
+    question: "Result 4",
+  },
+  {
+    id: 12,
+    question: "Result 5",
+  },
 ];
 
 export default () =>
   Promise.resolve(YES_NO);
+  
