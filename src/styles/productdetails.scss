@@ -13,19 +13,30 @@
     width: 100%;
   }
 
-  // this will change if we use the classes for different backgrounds from wp
   .product-details-color-box {
-    background-color: rgba(255, 248, 242, 0.7);
+    
     width: 95%;
-    margin:0 auto;
-    padding: 40px;
+    margin: 0 auto;
+    padding: 4px;
     margin-bottom: 5%;
-    // inside the product detail text we need to add the classes to change the colors
+    
     .product-details-text {
       font-size: 1em;
       h4 {
         font-size: 1.5em;
         margin-bottom: 5%;
+      }
+
+      .pink {
+        background-color: rgba(255, 248, 242, 0.7);
+        margin-bottom: 2%;
+        padding: 24px;
+      }
+
+      .brown {
+        background-color: rgba(233, 225, 218, 0.7);
+        margin-bottom: 2%;
+        padding: 24px;
       }
     }
   }
