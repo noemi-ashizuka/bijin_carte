@@ -12,37 +12,12 @@ class YesNoShindan extends React.Component {
     }
   }
 
-  getQuestions = () => {
+  getInitialQuestion = () => {
     YesNo().then(question => {
-      this.setState({
-        questions: question,
-      });
-    })
-  };
-
-  getCurrentQuestion = () => {
-    YesNo().then(question => {
-      // console.log(question[0])
-      // console.log(question[0].answers)
       this.setState({
         currentQuestion: question[0].question,
         currentAnswers: question[0].answers
       })
-    })
-   
-  }
-
-  // onClick = (e) => {
-  //   e.preventDefault()
-  //   //console.log(e.target.value)
-  //   this.updateQuestion(e.target.value)
-  // }
-
-  handleClick = (target) => {
-    console.log(target)
-    YesNo().then(question => {
-      console.log(question[target - 1]);
-      this.updateQuestion(target)
     })
   }
 
@@ -55,14 +30,10 @@ class YesNoShindan extends React.Component {
         currentAnswers: question[nextId - 1].answers
       })
     })
-    //console.log(this.state.currentAnswers)
-    // console.log(this.state)
   }
 
   componentDidMount() {
-    //this.getQuestions();
-    this.getCurrentQuestion();
-    //console.log(this.state.currentQuestion)
+    this.getInitialQuestion();
   }
 
   render() {
@@ -70,14 +41,12 @@ class YesNoShindan extends React.Component {
       <div>
         <div>{this.state.currentQuestion}</div>
         {this.state.currentAnswers &&
-        <div>
-          
-          {this.state.currentAnswers.map(answer => 
-            <button key={answer.answerId} onClick={e => this.handleClick(e.target.value)} value={answer.nextId}>{answer.content}</button>
-          )}
-  
-        </div>
-  }
+          <div>
+            {this.state.currentAnswers.map(answer => 
+              <button key={answer.answerId} onClick={e => this.updateQuestion(e.target.value)} value={answer.nextId}>{answer.content}</button>
+            )}
+          </div>
+        }
       </div>
     )
   }
