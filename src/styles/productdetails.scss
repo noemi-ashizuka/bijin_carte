@@ -13,13 +13,14 @@
     width: 100%;
   }
 
+  // this will change if we use the classes for different backgrounds from wp
   .product-details-color-box {
     background-color: rgba(255, 248, 242, 0.7);
     width: 95%;
     margin:0 auto;
     padding: 40px;
     margin-bottom: 5%;
-
+    // inside the product detail text we need to add the classes to change the colors
     .product-details-text {
       font-size: 1em;
       h4 {
