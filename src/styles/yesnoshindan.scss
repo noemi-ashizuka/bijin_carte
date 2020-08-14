@@ -55,6 +55,10 @@
     .question-text-container {
       width: 60%;
       margin: auto 0;
+      .question-text {
+        font-size: 2rem;
+        text-align: center;
+      }
     }
   }
 }
