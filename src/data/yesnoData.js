@@ -2,6 +2,7 @@ const YES_NO = [
   {
     id: 1,
     question: "洗顔や入浴の後、お肌につっぱり感を感じますか？",
+    imgUrl: "https://images.unsplash.com/photo-1535031171703-48b1362baa98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
     answers: [
       {
         answerId: 100,
@@ -135,4 +136,3 @@ const YES_NO = [
 
 export default () =>
   Promise.resolve(YES_NO);
-  

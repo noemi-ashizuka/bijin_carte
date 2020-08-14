@@ -7,7 +7,7 @@ class YesNoShindan extends React.Component {
 
     this.state = {
       currentQuestion: 0,
-      questionCount: 0,
+      // currentImg: 0,
       currentAnswers: []
     }
   }
@@ -16,6 +16,7 @@ class YesNoShindan extends React.Component {
     YesNo().then(question => {
       this.setState({
         currentQuestion: question[0].question,
+        // currentImg: question[0].imgUrl,
         currentAnswers: question[0].answers
       })
     })
@@ -37,6 +38,9 @@ class YesNoShindan extends React.Component {
   render() {
     return (
       <div>
+        {/* {this.state.currentImg &&
+          <img src={this.state.currentImg} />
+        } */}
         <div>{this.state.currentQuestion}</div>
         {this.state.currentAnswers &&
           <div>
