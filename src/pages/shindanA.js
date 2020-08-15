@@ -3,14 +3,15 @@ import Layout from '../components/layout';
 import MultipleQuizQuestions from '../data/multipleQuizQuestions';
 import QuestionBox from '../components/QuestionBox';
 import Result from '../components/Result';
-import '../styles/quizapp.scss';
+import '../styles/shindana.scss';
 
-class quizApp extends React.Component {
+class ShindanA extends React.Component {
   constructor(props) {
     super(props);
 
     this.state= {
       questions: [],
+      subLine: 0,
       questionCount: 0,
       userAnswers: []
     }
@@ -19,7 +20,8 @@ class quizApp extends React.Component {
   getQuestions = () => {
     MultipleQuizQuestions().then(question => {
       this.setState({
-        questions: question
+        questions: question,
+        subLine: question.subLine || 0
       });
     })
   };
@@ -37,7 +39,7 @@ class quizApp extends React.Component {
   checkResultType = () => {
     const count = this.state.userAnswers.reduce((tally, answer) => {
       tally[answer] = (tally[answer] || 0) + 1;
-      console.log(tally)
+      // console.log(tally)
       return tally;
     }, {});
 
@@ -57,11 +59,12 @@ class quizApp extends React.Component {
           {this.state.questions.length > 0 &&
             this.state.questionCount < 9 &&
               this.state.questions.map(
-                ({question, answers, id, img_url}) => 
+                ({question, answers, id, img_url, subLine}) => 
                   <QuestionBox 
                     question={question}
                     answers={answers}
                     imageUrl={img_url}
+                    subLine={subLine}
                     key={id}
                     selected={answer => this.computeAnswer(answer)}
                   />
@@ -73,4 +76,4 @@ class quizApp extends React.Component {
   }
 }
 
-export default quizApp;
+export default ShindanA;
