@@ -138,7 +138,8 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   {
     id: 6,
     img_url: "https://images.unsplash.com/photo-1582616698198-f978da534162?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-    question: "肌がきれいに見えるアクセサリーは？\n ※アクセサリーがない場合は、きれいな1円玉と5円玉を手の甲に乗せて比べてください\n（5円玉の場合は、AかB。艶ありか無しで選んでみてください。1円玉の場合は、CかD。艶ありか無しで選んでみてください。）",
+    question: "肌がきれいに見えるアクセサリーは？",
+    subLine: "※アクセサリーがない場合は、きれいな1円玉と5円玉を手の甲に乗せて比べてください\n（5円玉の場合は、AかB。艶ありか無しで選んでみてください。1円玉の場合は、CかD。艶ありか無しで選んでみてください。",
     answers: [
       {
         answerId: 117,

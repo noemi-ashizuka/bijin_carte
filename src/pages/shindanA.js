@@ -11,6 +11,7 @@ class ShindanA extends React.Component {
 
     this.state= {
       questions: [],
+      subLine: 0,
       questionCount: 0,
       userAnswers: []
     }
@@ -19,7 +20,8 @@ class ShindanA extends React.Component {
   getQuestions = () => {
     MultipleQuizQuestions().then(question => {
       this.setState({
-        questions: question
+        questions: question,
+        subLine: question.subLine || 0
       });
     })
   };
@@ -57,11 +59,12 @@ class ShindanA extends React.Component {
           {this.state.questions.length > 0 &&
             this.state.questionCount < 9 &&
               this.state.questions.map(
-                ({question, answers, id, img_url}) => 
+                ({question, answers, id, img_url, subLine}) => 
                   <QuestionBox 
                     question={question}
                     answers={answers}
                     imageUrl={img_url}
+                    subLine={subLine}
                     key={id}
                     selected={answer => this.computeAnswer(answer)}
                   />
