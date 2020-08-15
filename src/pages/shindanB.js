@@ -91,31 +91,33 @@ class ShindanB extends React.Component {
 
     return (
       <Layout>
-        <div className="question-box">
-          {this.state.questionCounter % 2 === 0 &&
-            styleOne
-          }
+        <div className="shindan-page-wrapper">
+          <div className="question-box">
+            {this.state.questionCounter % 2 === 0 &&
+              styleOne
+            }
+            
+            {this.state.questionCounter % 2 !== 0 &&
+              styleTwo
+            }
           
-          {this.state.questionCounter % 2 !== 0 &&
-            styleTwo
-          }
-        
-        
-          {/* {this.state.currentImg &&
-            <div className="question-img-container">
-              <img src={this.state.currentImg} alt="make up and skincare" className="shindan-image" />
-            </div>
-          }
-          <div className="question-text-container">
-            <h2 className="question-text">{this.state.currentQuestion}</h2>
-            {this.state.currentAnswers &&
-              <div className="answers-box">
-                {this.state.currentAnswers.map(answer => 
-                  <button key={answer.answerId} onClick={e => this.updateQuestion(e.target.value)} value={answer.nextId} className="answer-button">{answer.content}</button>
-                )}
+          
+            {/* {this.state.currentImg &&
+              <div className="question-img-container">
+                <img src={this.state.currentImg} alt="make up and skincare" className="shindan-image" />
               </div>
             }
-          </div> */}
+            <div className="question-text-container">
+              <h2 className="question-text">{this.state.currentQuestion}</h2>
+              {this.state.currentAnswers &&
+                <div className="answers-box">
+                  {this.state.currentAnswers.map(answer => 
+                    <button key={answer.answerId} onClick={e => this.updateQuestion(e.target.value)} value={answer.nextId} className="answer-button">{answer.content}</button>
+                  )}
+                </div>
+              }
+            </div> */}
+          </div>
         </div>
       </Layout>
     )

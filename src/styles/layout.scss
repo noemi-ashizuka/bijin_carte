@@ -2,7 +2,10 @@
 
 $not-black: rgb(25, 17, 15);
 
-html { font-size: 62.5%; }
+html { 
+  font-size: 62.5%;
+  height: 100%;
+}
 
 body {
   background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596027241/bijin%20carte/phone_bg_light_so53mw.jpg),
@@ -10,6 +13,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: $not-black;
+  height: 100%;
   // font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic Pro", sans-serif;
   font-family: "kozuka-gothic-pr6n", sans-serif;
   font-weight: 200;
