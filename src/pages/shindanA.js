@@ -3,9 +3,9 @@ import Layout from '../components/layout';
 import MultipleQuizQuestions from '../data/multipleQuizQuestions';
 import QuestionBox from '../components/QuestionBox';
 import Result from '../components/Result';
-import '../styles/quizapp.scss';
+import '../styles/shindana.scss';
 
-class quizApp extends React.Component {
+class ShindanA extends React.Component {
   constructor(props) {
     super(props);
 
@@ -73,4 +73,4 @@ class quizApp extends React.Component {
   }
 }
 
-export default quizApp;
+export default ShindanA;

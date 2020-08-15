@@ -2,9 +2,9 @@ import React from 'react';
 import YesNo from '../data/yesnoData';
 import {Fade} from 'react-reveal';
 import Layout from '../components/layout';
-import '../styles/yesnoshindan.scss';
+import '../styles/shindanb.scss';
 
-class YesNoShindan extends React.Component {
+class ShindanB extends React.Component {
   constructor(props) {
     super(props);
 
@@ -122,4 +122,4 @@ class YesNoShindan extends React.Component {
   }
 }
 
-export default YesNoShindan;
+export default ShindanB;
