@@ -1,5 +1,6 @@
 import React from 'react';
 import YesNo from '../data/yesnoData';
+import {Fade} from 'react-reveal';
 import '../styles/yesnoshindan.scss';
 
 class YesNoShindan extends React.Component {
@@ -9,6 +10,7 @@ class YesNoShindan extends React.Component {
     this.state = {
       currentQuestion: 0,
       currentImg: 0,
+      questionCounter: 0,
       currentAnswers: []
     }
   }
@@ -28,7 +30,8 @@ class YesNoShindan extends React.Component {
       this.setState({
         currentQuestion: question[nextId - 1].question,
         currentAnswers: question[nextId - 1].answers,
-        currentImg: question[nextId - 1].imgUrl
+        currentImg: question[nextId - 1].imgUrl,
+        questionCounter: this.state.questionCounter + 1
       })
     })
   }
@@ -38,9 +41,65 @@ class YesNoShindan extends React.Component {
   }
 
   render() {
+    const styleOne = <> {this.state.currentImg &&
+      <div className="question-img-container">
+        <Fade right duration={1500}>
+          <img src={this.state.currentImg} alt="make up and skincare" className="shindan-image" />
+        </Fade>
+      </div>
+      } 
+        <div className="question-text-container">
+          <Fade left duration={1500}>
+            <h2 className="question-text">{this.state.currentQuestion}</h2>
+          </Fade>
+        {this.state.currentAnswers &&
+          <Fade bottom duration={1500}>
+            <div className="answers-box">
+              {this.state.currentAnswers.map(answer => 
+                <button key={answer.answerId} onClick={e => this.updateQuestion(e.target.value)} value={answer.nextId} className="answer-button">{answer.content}</button>
+              )}
+            </div>
+          </Fade>
+        }
+          
+      </div> 
+    </>
+    const styleTwo = <> 
+      <div className="question-text-container">
+        <Fade right duration={1500}>
+          <h2 className="question-text">{this.state.currentQuestion}</h2>
+        </Fade>
+        {this.state.currentAnswers &&
+          <Fade top duration={1500}>
+            <div className="answers-box">
+              {this.state.currentAnswers.map(answer => 
+                  <button key={answer.answerId} onClick={e => this.updateQuestion(e.target.value)} value={answer.nextId} className="answer-button">{answer.content}</button>
+              )}
+            </div>
+          </Fade>
+        }
+      </div> 
+      {this.state.currentImg &&
+      <div className="question-img-container">
+        <Fade left duration={1500}>
+          <img src={this.state.currentImg} alt="make up and skincare" className="shindan-image" />
+        </Fade>
+      </div>
+      } 
+      </>
+
     return (
       <div className="question-box">
-        {this.state.currentImg &&
+        {this.state.questionCounter % 2 === 0 &&
+          styleOne
+        }
+        
+        {this.state.questionCounter % 2 !== 0 &&
+          styleTwo
+        }
+        
+        
+        {/* {this.state.currentImg &&
           <div className="question-img-container">
             <img src={this.state.currentImg} alt="make up and skincare" className="shindan-image" />
           </div>
@@ -54,7 +113,7 @@ class YesNoShindan extends React.Component {
               )}
             </div>
           }
-        </div>
+        </div> */}
       </div>
     )
   }
