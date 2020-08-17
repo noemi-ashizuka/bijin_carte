@@ -44,3 +44,23 @@
     }
   }
 }
+
+@media (min-width: 688px) {
+  .result-page-container {
+
+    .result-page-title {
+      font-size: 2rem;
+    }
+
+    .result-page-text {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+
+    .result-page-icons {
+      .result-page-icons-title {
+        font-size: 2rem;
+      }
+    }
+  }
+}
