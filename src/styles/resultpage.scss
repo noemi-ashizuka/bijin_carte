@@ -19,6 +19,7 @@
     margin: 0 auto;
     font-weight: 100;
     margin-bottom: 3%;
+    font-size: 1.7rem;
   }
 
   .result-page-text {
@@ -26,5 +27,20 @@
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
+  }
+
+  .result-page-icons {
+    margin: 0 auto;
+    text-align: center;
+
+    .result-page-icons-title {
+      font-weight: 100;
+      margin-bottom: 3%;
+      font-size: 1.7rem;
+    }
+
+    .share-icon {
+      margin: 16px;
+    }
   }
 }

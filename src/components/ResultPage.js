@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { FacebookShareButton, TwitterShareButton, PinterestShareButton, PinterestIcon, FacebookIcon, TwitterIcon} from 'react-share';
 import '../styles/resultpage.scss';
 
 
@@ -15,6 +16,13 @@ const ResultPage = ({result}) => (
         <p className="result-page-text">加齢と共に増える傾向にある肌タイプ。水分と、油分のバランスのくずれからバリア機 能も低下しがちなため、刺激に弱く、肌トラブルを起こしやすい。</p>
         <h2 className="result-page-title">お手入れポイント</h2>
         <p className="result-page-text">油分も水分も足りていない状態なので、どちらもバランスよく補給すること。ただし、刺激には弱いため、新しい化粧品を試すときはパッチテストを行う。生理前は避けるなど、様子を見ながら行う。</p>
+        
+       <div className="result-page-icons">
+       <h2 className="result-page-icons-title">結果をシェアする</h2>
+       <FacebookShareButton children={<FacebookIcon size={40} className="share-icon" />} />
+       <TwitterShareButton children={<TwitterIcon size={40} className="share-icon" />} />
+       <PinterestShareButton children={<PinterestIcon size={40} className="share-icon" />} />
+      </div>
       </div>
     }
     {result === "Result 2" && 
