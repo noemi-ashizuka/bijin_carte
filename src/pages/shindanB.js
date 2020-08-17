@@ -2,6 +2,7 @@ import React from 'react';
 import YesNo from '../data/yesnoData';
 import {Fade} from 'react-reveal';
 import Layout from '../components/layout';
+import ResultPage from '../components/ResultPage';
 import '../styles/shindanb.scss';
 
 class ShindanB extends React.Component {
@@ -49,6 +50,7 @@ class ShindanB extends React.Component {
         </Fade>
       </div>
       } 
+      {this.state.questionCounter < 3 &&
         <div className="question-text-container">
           <Fade left duration={1500}>
             <h2 className="question-text">{this.state.currentQuestion}</h2>
@@ -62,14 +64,20 @@ class ShindanB extends React.Component {
             </div>
           </Fade>
         }
-          
-      </div> 
+        </div> 
+      }
+      {this.state.questionCounter >= 3 &&
+        // <div>end of shindan: {this.state.currentQuestion}</div>
+        <ResultPage result={this.state.currentQuestion} />
+      }
     </>
     const styleTwo = <> 
+    {this.state.questionCounter < 3 &&
       <div className="question-text-container">
         <Fade right duration={1500}>
           <h2 className="question-text">{this.state.currentQuestion}</h2>
         </Fade>
+
         {this.state.currentAnswers &&
           <Fade top duration={1500}>
             <div className="answers-box">
@@ -80,6 +88,11 @@ class ShindanB extends React.Component {
           </Fade>
         }
       </div> 
+    }
+    {this.state.questionCounter >= 3 &&
+      // <div>end of shindan: {this.state.currentQuestion}</div>
+      <ResultPage result={this.state.currentQuestion} />
+    }
       {this.state.currentImg &&
       <div className="question-img-container">
         <Fade left duration={1500}>
