@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout';
+// import { Link } from 'gatsby';
 import GalleryPost from '../components/GalleryPost';
 import '../styles/productdetails.scss';
 
