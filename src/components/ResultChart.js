@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import { FacebookShareButton, TwitterShareButton, PinterestShareButton, PinterestIcon, FacebookIcon, TwitterIcon} from 'react-share';
 import '../styles/resultchart.scss';
 
+function refreshPage() {
+  window.location.reload(false);
+}
+  
 const ResultChart = ({resultData}) => (
   
   <div className="result-wrapper">
@@ -56,7 +60,7 @@ const ResultChart = ({resultData}) => (
         description={"This is my result"}
       />
     </div>
-
+        <button onClick={refreshPage}>Play Again</button>
   </div>
 )
 

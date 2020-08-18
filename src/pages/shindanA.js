@@ -49,6 +49,7 @@ class ShindanA extends React.Component {
 
   componentDidMount() {
     this.getQuestions();
+    window.scrollTo(0, 0);
   }
 
   render() {
