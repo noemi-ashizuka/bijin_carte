@@ -41,7 +41,7 @@
     }
 
     .result-text {
-
+      padding: 5%;
     }
   }
 
@@ -49,6 +49,7 @@
     font-family: "rollerscript-rough", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 3.5rem;
     position: relative;
     bottom: -20px;
   }
@@ -99,6 +100,66 @@
       font-size: 4rem;
       margin: 16px;
       color: rgb(239, 209, 201);
+    }
+  }
+}
+
+// need another media query for ipads, the values for the following one, will be for desktop only
+@media (min-width: 688px) {
+  .result-wrapper {
+    .result-bg-marble {
+      top: 35%;
+      left: 5%;
+      right: 5%;
+      height: 500px;
+    }
+
+    .result-top {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      display: flex;
+      flex-direction: row;
+      padding: 40px;
+
+      .result-main-title {
+        top: -100px;
+      }
+
+      .result-image {
+        width: 300px;
+        max-height: 500px;
+        top: -10px;
+        left: -150px;
+       
+      }
+
+      .result-text {
+        width: 50%;
+        // position: relative;
+        //left: -100px;
+        // right: 100px;
+        padding: 0;
+        margin: auto 0;
+      }
+    }
+
+    .focus-box {
+      padding: 2.5%;
+    }
+
+    .result-diagram-box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .result-diagram {
+        width: 450px;
+      }
+    }
+
+    .quiz-icons-wrapper {
+      .quiz-icons-title {
+        font-size: 2.5rem;
+      }
     }
   }
 }

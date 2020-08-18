@@ -9,7 +9,9 @@ const ResultChart = ({resultData}) => (
     <div className="result-top" style={{backgroundColor: `${resultData[0].backgroundColor}`}}>
       <h1 className="result-main-title">{resultData[0].title}</h1>
       <img src={resultData[0].mainImgUrl} alt="seasonal flower" className="result-image" />
-      <p className="result-text">{resultData[0].firstBox}</p>
+      <div className="result-text">
+        <p>{resultData[0].firstBox}</p>
+      </div>
     </div>
     <h1 className="result-subtitle">Your Keywords</h1>
     <div className="focus-box">
