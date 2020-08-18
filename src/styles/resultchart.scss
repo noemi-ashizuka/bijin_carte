@@ -1,6 +1,21 @@
 .result-wrapper {
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
+
+  .result-bg-marble {
+    background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1597724915/bijin%20carte/henry-co-tqu0IOMaiU8-unsplash_n9jqpc.jpg)
+    center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 18%;
+    bottom: 5%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
   .result-top {
     display: flex;
     flex-direction: column;
@@ -30,13 +45,19 @@
     }
   }
 
-  .focus-box {
+  .result-subtitle {
+    font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    bottom: -20px;
+  }
 
-    .result-subtitle {
-      font-family: "rollerscript-rough", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
+  .focus-box {
+    border: 2px solid  rgb(25, 17, 15);
+    border-radius: 16px;
+    margin-bottom: 5%;
+    padding: 5%;
 
     .result-text {
 
@@ -67,8 +88,8 @@
 
   .quiz-icons-wrapper {
     margin: 0 auto;
+    text-align: center;
     margin-top: 5%;
-    //padding-top: 52px;
     
     .quiz-icons-title {
       font-size: 2rem;

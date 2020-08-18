@@ -5,13 +5,14 @@ import '../styles/resultchart.scss';
 const ResultChart = ({resultData}) => (
   
   <div className="result-wrapper">
+    <div className="result-bg-marble"></div>
     <div className="result-top" style={{backgroundColor: `${resultData[0].backgroundColor}`}}>
       <h1 className="result-main-title">{resultData[0].title}</h1>
       <img src={resultData[0].mainImgUrl} alt="seasonal flower" className="result-image" />
       <p className="result-text">{resultData[0].firstBox}</p>
     </div>
+    <h1 className="result-subtitle">Your Keywords</h1>
     <div className="focus-box">
-      <h1 className="result-subtitle">Your Keywords</h1>
       <p className="result-text">{resultData[0].keywords}</p>
     </div>
     <div className="result-main-content">
