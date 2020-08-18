@@ -90,7 +90,6 @@ class ShindanB extends React.Component {
       </div> 
     }
     {this.state.questionCounter >= 3 &&
-      // <div>end of shindan: {this.state.currentQuestion}</div>
       <ResultPage result={this.state.currentQuestion} />
     }
       {this.state.currentImg &&

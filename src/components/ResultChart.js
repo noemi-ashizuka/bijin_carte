@@ -42,22 +42,22 @@ const ResultChart = ({resultData}) => (
       <FacebookShareButton
         url="http://google.com"
         children={<FacebookIcon size={40} className="quiz-share-icon" />}
-        quote="B: イエベ秋"
+        quote={`${resultData[0].title}キーワード: ${resultData[0].keywords}`}
         hashtag="findyourbeauty"
       />
       <TwitterShareButton
         url="http://google.com"
         children={<TwitterIcon size={40} className="quiz-share-icon" />}
         className="quiz-result-title"
-        title="B: イエベ秋"
+        title={`${resultData[0].title}キーワード: ${resultData[0].keywords}`}
         via="bijin_carte"
         hashtags={["bijincarte", "findyourbeauty"]}
       />
       <PinterestShareButton
         url="http://google.com"
         children={<PinterestIcon size={40} className="quiz-share-icon" />}
-        media={"https://images.unsplash.com/photo-1538580619159-6c19131e1062?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"}
-        description={"This is my result"}
+        media={resultData[0].mainImgUrl}
+        description={`${resultData[0].title}キーワード: ${resultData[0].keywords}`}
       />
     </div>
         <button onClick={refreshPage}>Play Again</button>
