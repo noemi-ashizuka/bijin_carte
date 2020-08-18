@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { FacebookShareButton, TwitterShareButton, PinterestShareButton, PinterestIcon, FacebookIcon, TwitterIcon} from 'react-share';
 import ResultChart from './ResultChart';
 import multipleQuestionsResults from '../data/multipleQuestionsResults';
 import '../styles/result.scss';
