@@ -1,9 +1,14 @@
-import React from 'react'
-import Layout from '../components/layout'
+import React from 'react';
+import Layout from '../components/layout';
+import ReactHtmlParser from 'react-html-parser';
+import { Helmet } from "react-helmet";
 import '../styles/postdetails.scss';
 
 export default ({pageContext}) => (
   <Layout>
+     <Helmet>
+      { ReactHtmlParser(pageContext.yoast_head)}
+    </Helmet>
     <div className="post-details-wrapper">
       <div className="post-details-left">
         {pageContext.featured_media &&

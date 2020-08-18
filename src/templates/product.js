@@ -1,11 +1,15 @@
 import React from 'react'
 import Layout from '../components/layout';
-// import { Link } from 'gatsby';
+import ReactHtmlParser from 'react-html-parser';
+import { Helmet } from "react-helmet";
 import GalleryPost from '../components/GalleryPost';
 import '../styles/productdetails.scss';
 
 export default ({pageContext}) => (
   <Layout>
+    <Helmet>
+      { ReactHtmlParser(pageContext.yoast_head)}
+    </Helmet>
     <div className="product-details-wrapper">
       <h1 className="product-details-title">{pageContext.title}</h1>
       {pageContext.featured_media && 
