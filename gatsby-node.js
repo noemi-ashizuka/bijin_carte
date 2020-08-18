@@ -36,6 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
                   source_url
                   alt_text
                 }
+                yoast_head
               }
             }
           }
@@ -98,6 +99,7 @@ exports.createPages = ({ graphql, actions }) => {
                     title
                     excerpt
                     content
+                    yoast_head
                     featured_media{
                       alt_text
                       source_url
@@ -183,6 +185,7 @@ exports.createPages = ({ graphql, actions }) => {
                     slug
                     excerpt
                     content
+                    yoast_head
                     featured_media{
                       source_url
                       alt_text

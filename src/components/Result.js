@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ResultChart from './ResultChart';
 import multipleQuestionsResults from '../data/multipleQuestionsResults';
 import '../styles/result.scss';

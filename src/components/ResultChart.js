@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FacebookShareButton, TwitterShareButton, PinterestShareButton, PinterestIcon, FacebookIcon, TwitterIcon} from 'react-share';
 import '../styles/resultchart.scss';
 
 const ResultChart = ({resultData}) => (
   
   <div className="result-wrapper">
+    {useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])}
     <div className="result-bg-marble"></div>
     <div className="result-top" style={{backgroundColor: `${resultData[0].backgroundColor}`}}>
       <h1 className="result-main-title">{resultData[0].title}</h1>
