@@ -60,7 +60,7 @@ const ResultChart = ({resultData}) => (
         description={`${resultData[0].title}キーワード: ${resultData[0].keywords}`}
       />
     </div>
-        <button onClick={refreshPage}>Play Again</button>
+        <button onClick={refreshPage} className="quiz-button-result">もう一度診断する</button>
   </div>
 )
 

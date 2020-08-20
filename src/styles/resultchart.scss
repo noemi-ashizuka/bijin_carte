@@ -102,6 +102,30 @@
       color: rgb(239, 209, 201);
     }
   }
+
+  .quiz-button-result {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px;
+    width: 100%;
+    background-color: rgb(239, 209, 201);
+  }
+
+  .quiz-button-result:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 // need another media query for ipads, the values for the following one, will be for desktop only
