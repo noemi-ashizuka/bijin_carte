@@ -12,7 +12,7 @@ const ResultPage = ({result}) => (
     {result === "Result 1" && 
       <div className="result-page-container">
         <h1 className="result-page-main-title">乾燥肌タイプ</h1>
-        <img src="https://res.cloudinary.com/dtewjoisz/image/upload/v1597625744/bijin%20carte/sample_ygyaev.png" alt="乾燥肌タイプ" className="result-page-image" />
+        <img src="https://res.cloudinary.com/dtewjoisz/image/upload/v1597909353/bijin%20carte/%E4%B9%BE%E7%87%A5%E8%82%8C_matrix_for_hada_shindan__%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_1_fyzji7.svg" alt="乾燥肌タイプ" className="result-page-image" />
         <p className="result-page-text">皮脂も水分も少なめ。<br></br>かさつきが気になるタイプ。</p>
         <h2 className="result-page-title">特徴</h2>
         <p className="result-page-text">年齢を重ねるにつれ、なりやすい肌タイプ。バリア機能が低下しがちなため、刺激に弱く、肌トラブルを起こしやすい</p>
