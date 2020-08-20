@@ -8,6 +8,7 @@ const ResultPage = ({result}) => (
     {useEffect(() => {
       window.scrollTo(0, 0)
     }, [])}
+    <h1 className="result-page-top-title">Your Type</h1>
     {result === "Result 1" && 
       <div className="result-page-container">
         <h1 className="result-page-main-title">乾燥肌タイプ</h1>
