@@ -27,6 +27,7 @@ const ResultChart = ({resultData}) => (
     <div className="result-main-content">
       <h3>{resultData[0].secondBox.title}</h3>
       <p>{resultData[0].secondBox.text}</p>
+      <img src={resultData[0].paletteUrl} alt="color-palette" className="result-palette" />
       <h3>{resultData[0].thirdBox.title}</h3>
       <p>{resultData[0].thirdBox.text}</p>
       <h3>{resultData[0].fourthBox.title}</h3>

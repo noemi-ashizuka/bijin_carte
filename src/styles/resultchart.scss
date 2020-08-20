@@ -79,6 +79,11 @@
       text-align: center;
       margin-bottom: 5%;
     }
+
+    .result-palette {
+      width: 100%;
+      margin-bottom: 5%;
+    }
   }
 
   .result-diagram-box {
@@ -154,7 +159,6 @@
         max-height: 500px;
         top: -10px;
         left: -150px;
-       
       }
 
       .result-text {
@@ -166,6 +170,16 @@
 
     .focus-box {
       padding: 2.5%;
+    }
+
+    .result-main-content {
+      display: flex;
+      flex-direction: column;
+      .result-palette {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 2%;
+      }
     }
 
     .result-diagram-box {
