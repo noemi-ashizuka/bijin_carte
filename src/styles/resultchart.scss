@@ -1,0 +1,189 @@
+.result-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+  .result-bg-marble {
+    background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1597724915/bijin%20carte/henry-co-tqu0IOMaiU8-unsplash_n9jqpc.jpg)
+    center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 18%;
+    bottom: 5%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
+  .result-top {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+
+    .result-main-title {
+      font-family: "rollerscript-rough", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 5%;
+      position: relative;
+      top: -50px;
+    }
+
+    .result-image {
+      width: 200px;
+      margin: 0 auto;
+      //margin-bottom: 5%;
+      position: relative;
+      top: -40px;
+    }
+
+    .result-text {
+      padding: 5%;
+    }
+  }
+
+  .result-subtitle {
+    font-family: "rollerscript-rough", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    position: relative;
+    bottom: -20px;
+  }
+
+  .focus-box {
+    border: 1px solid  rgb(25, 17, 15);
+    border-radius: 16px;
+    margin-bottom: 5%;
+    padding: 5%;
+
+    .result-text {
+      font-size: 1.3rem;
+    }
+  }
+
+  .result-main-content {
+    background-color: rgba(255, 248, 242, 0.7);
+    padding: 5%;
+    margin-bottom: 5%;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 5%;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 5%;
+    }
+  }
+
+  .result-diagram-box {
+    .result-diagram {
+      margin-bottom: 5%;
+    }
+  }
+
+  .quiz-icons-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+    
+    .quiz-icons-title {
+      font-size: 2rem;
+    }
+    
+    .quiz-share-icon {
+      font-size: 4rem;
+      margin: 16px;
+      color: rgb(239, 209, 201);
+    }
+  }
+
+  .quiz-button-result {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin-bottom: 1em;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px;
+    width: 100%;
+    background-color: rgb(239, 209, 201);
+  }
+
+  .quiz-button-result:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+// need another media query for ipads, the values for the following one, will be for desktop only
+@media (min-width: 688px) {
+  .result-wrapper {
+    .result-bg-marble {
+      top: 35%;
+      left: 5%;
+      right: 5%;
+      height: 500px;
+    }
+
+    .result-top {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      display: flex;
+      flex-direction: row;
+      padding: 40px;
+
+      .result-main-title {
+        top: -100px;
+      }
+
+      .result-image {
+        width: 300px;
+        max-height: 500px;
+        top: -10px;
+        left: -150px;
+       
+      }
+
+      .result-text {
+        width: 50%;
+        // position: relative;
+        //left: -100px;
+        // right: 100px;
+        padding: 0;
+        margin: auto 0;
+      }
+    }
+
+    .focus-box {
+      padding: 2.5%;
+    }
+
+    .result-diagram-box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .result-diagram {
+        width: 450px;
+      }
+    }
+
+    .quiz-icons-wrapper {
+      .quiz-icons-title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

@@ -142,24 +142,24 @@ const MULTIPLE_QUIZ_QUESTIONS = [
     subLine: "※アクセサリーがない場合は、きれいな1円玉と5円玉を手の甲に乗せて比べてください\n（5円玉の場合は、AかB。艶ありか無しで選んでみてください。1円玉の場合は、CかD。艶ありか無しで選んでみてください。",
     answers: [
       {
-        answerId: 117,
-        content: "艶のあるプラチナ、シルバー。",
-        type: "D"
-      },
-      {
         answerId: 118,
-        content: "キラキラした明るいツヤありゴールド",
+        content: "A: キラキラした明るいツヤありゴールド",
         type: "A"
       },
       {
+        answerId: 120,
+        content: "B: 黄みの強いゴールドや、つや消しのゴールドまたはブロンズ",
+        type: "B"
+      },
+      {
         answerId: 119,
-        content: "光沢控えめのプラチナ、シルバー。",
+        content: "C: 光沢控えめのプラチナ、シルバー。",
         type: "C"
       },
       {
-        answerId: 120,
-        content: "黄みの強いゴールドや、つや消しのゴールドまたはブロンズ",
-        type: "B"
+        answerId: 117,
+        content: "D: 艶のあるプラチナ、シルバー。",
+        type: "D"
       }
     ]
   },

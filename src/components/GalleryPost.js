@@ -6,7 +6,7 @@ import Button from './Button';
 
 const GalleryPost = ({imgOne, imgTwo, imgThree}) => (
   <div className="gallery-wrapper">
-    <h1 className="gallery-title">Gallery</h1>
+    <h1 className="gallery-title">From Gallery</h1>
     <h3 className="gallery-subtitle">各メニューのサンプルのスライドショー</h3>
     <div className="gallery-container">
       
@@ -24,7 +24,7 @@ const GalleryPost = ({imgOne, imgTwo, imgThree}) => (
       </div>
       <div className="gallery-color-box" />
     </div>
-    <Link to='/gallery'><Button title="More" /></Link>
+    <Link to='/gallery'><Button title="Main Gallery" /></Link>
   </div>
 )
 
