@@ -16,7 +16,7 @@ const ShindanList = () => (
         </Link>
         <Link to="/quizApp" className="shindan-thumb">
           <div>
-            Coming Soon
+            Skin Type
           </div>
         </Link>
         <Link to="/quizApp" className="shindan-thumb">

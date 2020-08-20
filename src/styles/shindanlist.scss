@@ -54,4 +54,10 @@
       center no-repeat;
       background-size: cover;
     }
+
+    .shindan-thumb:nth-child(2) {
+      background: linear-gradient(to bottom, rgba(243, 218, 218, 0.4), rgba(221, 178, 178, 0.4)), url(https://images.unsplash.com/photo-1509384473936-2d36ab6e198d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)
+      center no-repeat;
+      background-size: cover;
+    }
 }
