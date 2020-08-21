@@ -35,7 +35,6 @@
     .result-image {
       width: 200px;
       margin: 0 auto;
-      //margin-bottom: 5%;
       position: relative;
       top: -40px;
     }
@@ -133,8 +132,42 @@
   }
 }
 
-// TODO: need another media query for ipads, the values for the following one, will be for desktop only
 @media (min-width: 688px) {
+
+  .result-wrapper{
+    .result-bg-marble {
+      height: 600px;
+    }
+
+    .result-main-content{
+      display: flex;
+      flex-direction: column;
+      .result-palette {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 5%;
+      }
+    }
+
+    .result-diagram-box {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .result-diagram {
+        width: 300px;
+      }
+    }
+
+    .quiz-button-result {
+      width: 250px;
+      margin: 0 auto;
+      margin-top: 2%;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
   .result-wrapper {
     .result-bg-marble {
       top: 35%;
@@ -187,7 +220,7 @@
       justify-content: space-around;
       flex-wrap: wrap;
       .result-diagram {
-        width: 450px;
+        width: 400px;
       }
     }
 
