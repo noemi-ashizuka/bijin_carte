@@ -1,8 +1,9 @@
 import React from 'react';
 import Layout from '../components/layout';
 import MultipleQuizQuestions from '../data/multipleQuizQuestions';
+import multipleQuestionsResults from '../data/multipleQuestionsResults';
 import QuestionBox from '../components/QuestionBox';
-import Result from '../components/Result';
+import ResultChart from '../components/ResultChart';
 import '../styles/shindana.scss';
 
 class ShindanA extends React.Component {
@@ -42,10 +43,13 @@ class ShindanA extends React.Component {
       // console.log(tally)
       return tally;
     }, {});
-
     // get the max value and return its key
     return Object.keys(count).reduce((a, b) => count[a] > count[b] ? a : b);
   }
+
+  getResult = (resultType) => {
+    return multipleQuestionsResults.filter(data => data.resultType === resultType)
+   }
 
   componentDidMount() {
     this.getQuestions();
@@ -70,7 +74,7 @@ class ShindanA extends React.Component {
                     selected={answer => this.computeAnswer(answer)}
                   />
               )}
-              {this.state.questionCount === 9 ? (<Result resultType={this.checkResultType()} />) : null }
+              {this.state.questionCount === 9 ? (<ResultChart resultData={this.getResult(this.checkResultType())} />) : null }
         </div>
       </Layout>
     )
