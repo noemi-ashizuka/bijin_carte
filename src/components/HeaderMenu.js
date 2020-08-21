@@ -40,6 +40,9 @@ const HeaderMenu = () => (
                 {item.title}
               </Nav.Link>
             )}
+            <Navbar.Text className="navbar-menu-item navbar-menu-text ml-auto m-1 d-lg-none">Shindan</Navbar.Text>
+            <Nav.Link href="/shindanA" className="navbar-menu-item ml-auto m-1 d-lg-none">Personal Color</Nav.Link>
+            <Nav.Link href="/shindanB" className="navbar-menu-item ml-auto m-1 d-lg-none">Skin Type</Nav.Link>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
