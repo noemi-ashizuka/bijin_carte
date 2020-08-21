@@ -9,17 +9,17 @@ const ShindanList = () => (
     <h3 className="shindan-subtitle">今のあなたが仕方そのうち不都合で、壇の話まではできるだけ見ずのがえらいとありがは高いまでのので。</h3>
     <Fade right duration={1500}>
       <div className="shindan-container">
-        <Link to="/quizApp" className="shindan-thumb">
+        <Link to="/shindanA" className="shindan-thumb">
           <div>
             Personal Color
           </div>
         </Link>
-        <Link to="/quizApp" className="shindan-thumb">
+        <Link to="/shindanB" className="shindan-thumb">
           <div>
             Skin Type
           </div>
         </Link>
-        <Link to="/quizApp" className="shindan-thumb">
+        <Link to="#" className="shindan-thumb">
           <div>
             Coming Soon
           </div>
