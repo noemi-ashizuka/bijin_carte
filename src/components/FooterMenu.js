@@ -1,5 +1,5 @@
 import React from 'react';
-import {graphql, StaticQuery, Link} from 'gatsby';
+import {graphql, StaticQuery} from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitterSquare, faInstagramSquare, faFacebookSquare, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import '../styles/footer.scss';
@@ -32,10 +32,10 @@ const FooterMenu = () => (
       )}
     </div>
     <div className="footer-icons">
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitterSquare} className="footer-icon" /></a>
+      {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitterSquare} className="footer-icon" /></a> */}
       <a href="https://www.instagram.com/chihiro_beautylabo/?hl=ja" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagramSquare} className="footer-icon" /></a>
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTiktok} className="footer-icon" /></a>
-      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} className="footer-icon" /></a>
+      {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTiktok} className="footer-icon" /></a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} className="footer-icon" /></a> */}
     </div>
   </div>
   )} />
