@@ -1,32 +1,32 @@
 const MULTIPLE_QUIZ_QUESTIONS = [
   // all images should be changed with links to wp media or other hosting in production
-  {
-    id: 1,
-    img_url: "https://images.unsplash.com/photo-1576426863848-c21f53c60b19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
-    question: "あなたの顔の印象は？",
-    answers: [
-      {
-        answerId: 101,
-        content: "はっきりした顔立ち",
-        type: "A"
-      },
-      {
-        answerId: 102,
-        content: "優しい顔立ち",
-        type: "B"
-      },
-      {
-        answerId: 103,
-        content: "はっきりした顔立ち",
-        type: "C"
-      },
-      {
-        answerId: 104,
-        content: "優しい顔立ち",
-        type: "D"
-      }
-    ]
-  },
+  // {
+  //   id: 1,
+  //   img_url: "https://images.unsplash.com/photo-1576426863848-c21f53c60b19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+  //   question: "あなたの顔の印象は？",
+  //   answers: [
+  //     {
+  //       answerId: 101,
+  //       content: "はっきりした顔立ち",
+  //       type: "A"
+  //     },
+  //     {
+  //       answerId: 102,
+  //       content: "優しい顔立ち",
+  //       type: "B"
+  //     },
+  //     {
+  //       answerId: 103,
+  //       content: "はっきりした顔立ち",
+  //       type: "C"
+  //     },
+  //     {
+  //       answerId: 104,
+  //       content: "優しい顔立ち",
+  //       type: "D"
+  //     }
+  //   ]
+  // },
   {
     id: 2,
     img_url: "https://images.unsplash.com/photo-1526045478516-99145907023c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",

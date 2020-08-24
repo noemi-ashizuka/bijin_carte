@@ -62,7 +62,7 @@ class ShindanA extends React.Component {
         <div className="quiz-container">
           <h1 className="quiz-title">Personal Color</h1>
           {this.state.questions.length > 0 &&
-            this.state.questionCount < 9 &&
+            this.state.questionCount < 7 &&
               this.state.questions.map(
                 ({question, answers, id, img_url, subLine}) => 
                   <QuestionBox 
@@ -74,7 +74,7 @@ class ShindanA extends React.Component {
                     selected={answer => this.computeAnswer(answer)}
                   />
               )}
-              {this.state.questionCount === 9 ? (<ResultChart resultData={this.getResult(this.checkResultType())} />) : null }
+              {this.state.questionCount === 7 ? (<ResultChart resultData={this.getResult(this.checkResultType())} />) : null }
         </div>
       </Layout>
     )
