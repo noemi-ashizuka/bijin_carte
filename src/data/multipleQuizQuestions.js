@@ -28,61 +28,61 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   //   ]
   // },
   {
-    id: 2,
+    id: 1,
     img_url: "https://images.unsplash.com/photo-1526045478516-99145907023c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
-    question: "肌から見える血管の色味は？",
+    question: "腕の内側（紫外線を浴びにくい場所）、肌から見える血管の色味は？？",
     answers: [
       {
         answerId: 105,
-        content: "青っぽい",
+        content: "肌は黄みを帯びていてマットな肌、血管は緑っぽい",
         type: "C"
       },
       {
         answerId: 106,
-        content: "緑っぽい",
+        content: "肌は黄みを帯びていて艶がある、血管は緑っぽい",
         type: "A"
       },
       {
         answerId: 107,
-        content: "青っぽい",
+        content: "肌はピンクがかっていてマット、血管は青っぽい",
         type: "D"
       },
       {
         answerId: 108,
-        content: "緑っぽい",
+        content: "肌はピンクがかっていてキメが細かくマット、血管は青っぽい",
         type: "B"
       }
     ]
   },
+  // {
+  //   id: 3,
+  //   img_url: "https://images.unsplash.com/photo-1514163061636-02db31852e84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+  //   question: "腕の内側・うち太腿など、あまり日に当たらない箇所の肌の色は？",
+  //   answers: [
+  //     {
+  //       answerId: 109,
+  //       content: "黄味がかっている",
+  //       type: "B"
+  //     },
+  //     {
+  //       answerId: 110,
+  //       content: "ピンクっぽい",
+  //       type: "D"
+  //     },
+  //     {
+  //       answerId: 111,
+  //       content: "黄味がかっている",
+  //       type: "A"
+  //     },
+  //     {
+  //       answerId: 112,
+  //       content: "ピンクっぽい",
+  //       type: "C"
+  //     }
+  //   ]
+  // },
   {
-    id: 3,
-    img_url: "https://images.unsplash.com/photo-1514163061636-02db31852e84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
-    question: "腕の内側・うち太腿など、あまり日に当たらない箇所の肌の色は？",
-    answers: [
-      {
-        answerId: 109,
-        content: "黄味がかっている",
-        type: "B"
-      },
-      {
-        answerId: 110,
-        content: "ピンクっぽい",
-        type: "D"
-      },
-      {
-        answerId: 111,
-        content: "黄味がかっている",
-        type: "A"
-      },
-      {
-        answerId: 112,
-        content: "ピンクっぽい",
-        type: "C"
-      }
-    ]
-  },
-  {
-    id: 4,
+    id: 2,
     img_url: "https://images.unsplash.com/photo-1584297091622-af8e5bd80b13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
     question: "髪（地毛）の色は？",
     answers: [
@@ -109,7 +109,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
     ]
   },
   {
-    id: 5,
+    id: 3,
     img_url: "https://images.unsplash.com/photo-1526758097130-bab247274f58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
     question: "日焼けするとどうなる？",
     answers: [
@@ -136,7 +136,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
     ]
   },
   {
-    id: 6,
+    id: 4,
     img_url: "https://images.unsplash.com/photo-1582616698198-f978da534162?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     question: "肌がきれいに見えるアクセサリーは？",
     subLine: "※アクセサリーがない場合は、きれいな1円玉と5円玉を手の甲に乗せて比べてください\n（5円玉の場合は、AかB。艶ありか無しで選んでみてください。1円玉の場合は、CかD。艶ありか無しで選んでみてください。",
@@ -164,7 +164,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
     ]
   },
   {
-    id: 7,
+    id: 5,
     img_url: "https://images.unsplash.com/photo-1506003094589-53954a26283f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     question: "身近な人に褒められるファッションカラー・口紅の色は？",
     answers: [
@@ -191,7 +191,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
     ]
   },
   {
-    id: 8,
+    id: 6,
     img_url: "https://images.unsplash.com/photo-1542833807-ad5af0977050?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     question: "自分で苦手意識のあるリップは？",
     answers: [
@@ -218,7 +218,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
     ]
   },
   {
-    id: 9,
+    id: 7,
     img_url: "https://images.unsplash.com/photo-1500840216050-6ffa99d75160?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     question: "周りから見たあなたの第一印象は？",
     answers: [

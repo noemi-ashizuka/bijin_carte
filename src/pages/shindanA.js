@@ -40,7 +40,7 @@ class ShindanA extends React.Component {
   checkResultType = () => {
     const count = this.state.userAnswers.reduce((tally, answer) => {
       tally[answer] = (tally[answer] || 0) + 1;
-      // console.log(tally)
+      console.log(tally)
       return tally;
     }, {});
     // get the max value and return its key
