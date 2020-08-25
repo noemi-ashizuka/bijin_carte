@@ -29,7 +29,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   // },
   {
     id: 1,
-    img_url: "https://images.unsplash.com/photo-1526045478516-99145907023c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/content-pixie-WdJ4WnLxyDs-unsplash-scaled-e1597280771849.jpg",
     question: "腕の内側（紫外線を浴びにくい場所）、肌から見える血管の色味は？？",
     answers: [
       {
@@ -83,7 +83,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   // },
   {
     id: 2,
-    img_url: "https://images.unsplash.com/photo-1584297091622-af8e5bd80b13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/brooke-lark-Aq2GM7iV71A-unsplash-scaled-e1597280660217.jpg",
     question: "髪（地毛）の色は？",
     answers: [
       {
@@ -110,7 +110,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 3,
-    img_url: "https://images.unsplash.com/photo-1526758097130-bab247274f58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60",
+    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/camille-brodard-kmile-feminine-creative-designer-VxAwTeiqDao-unsplash-scaled-e1597280711356.jpg",
     question: "日焼けするとどうなる？",
     answers: [
       {
@@ -137,7 +137,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 4,
-    img_url: "https://images.unsplash.com/photo-1582616698198-f978da534162?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/jess-bailey-jL6vsxG8vtw-unsplash-scaled-e1598320065560.jpg",
     question: "肌がきれいに見えるアクセサリーは？",
     subLine: "※アクセサリーがない場合は、きれいな1円玉と5円玉を手の甲に乗せて比べてください\n（5円玉の場合は、AかB。艶ありか無しで選んでみてください。1円玉の場合は、CかD。艶ありか無しで選んでみてください。",
     answers: [
@@ -165,7 +165,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 5,
-    img_url: "https://images.unsplash.com/photo-1506003094589-53954a26283f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/lavender-e1598320029906.jpeg",
     question: "身近な人に褒められるファッションカラー・口紅の色は？",
     answers: [
       {
@@ -192,7 +192,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 6,
-    img_url: "https://images.unsplash.com/photo-1542833807-ad5af0977050?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/anthony-tran-Sd9A6NVHsd4-unsplash-scaled-e1597280617108.jpg",
     question: "自分で苦手意識のあるリップは？",
     answers: [
       {
@@ -219,7 +219,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 7,
-    img_url: "https://images.unsplash.com/photo-1500840216050-6ffa99d75160?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/jamie-street-aMuq-Xz7R_M-unsplash-scaled-e1597280960438.jpg",
     question: "周りから見たあなたの第一印象は？",
     answers: [
       {
