@@ -9,6 +9,7 @@ const MULTIPLE_QUESTIONS_RESULTS = [
     firstBox: "第一印象は、明るくさわやかで、親しみやすく活発なイメージ\nアクティブで可愛らしい印象の方が多く、\n若々しい雰囲気を持っています。\n\n黄色味が強い明るく華やかな色味が似合うタイプです。\n肌は黄みを帯びて明るく、ツヤや透明感があり、色白な人が多いことも特徴です。\nまた、血色がよく頬に健康的な血色感がある方も多いです。\n瞳の色や髪の色はやわらかなブラウン、瞳が色素の薄いキラキラした印象をしています。",
     keywords: "若々しい、キュート、明るい、アクティブ",
     paletteUrl: "https://res.cloudinary.com/dtewjoisz/image/upload/v1597909345/bijin%20carte/spring_kscdyi.jpg",
+    makeupUrl: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/spring.jpg",
     secondBox: {
       title: "似合う色",
       text: "黄みで明るくクリアな色\n明るいクリアなカラーや優しい雰囲気のパステルカラーがオススメ"
@@ -36,6 +37,7 @@ const MULTIPLE_QUESTIONS_RESULTS = [
     firstBox: "第一印象はシックで落ち着いたイメージ \n暖かみや穏やかさがあり、チュラルな印象の大人っぽい雰囲気を持った方が多いです。\nイエローベースの温かみのあるディープなカラーが似合うタイプ。\n肌は黄みが強くマットな雰囲気で、赤身がないのが特徴\n日に焼けると吸収して黒くなりやすいですが、色むらなく、キレイに日焼けする方が多いです。\n髪色や瞳の色は黒に近い穏やかなダークブラウン、白目と黒目のコントラストはソフトな印象です。",
     keywords: "シック、ナチュラル、ヴィンテージ、落ち着いた、知的",
     paletteUrl: "https://res.cloudinary.com/dtewjoisz/image/upload/v1597909344/bijin%20carte/autumn_edrtc3.jpg",
+    makeupUrl: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/Autumn.jpg",
     secondBox: {
       title: "似合う色",
       text: "黄みで暗くシックな色\nアースカラーや大人っぽく深みのあるカラーがオススメ"
@@ -63,6 +65,7 @@ const MULTIPLE_QUESTIONS_RESULTS = [
     firstBox: "第一印象はソフトでエレガント、上品で知的なイメージ\n優しい雰囲気を持ち合わせたた方が多いです。\n青みのあるパステル調のソフトな色が似合うタイプ\n肌は赤みを帯びて、ピンクがかり、きめ細かいく繊細。\n繊細がゆえ、クマが出やすい方も。\n髪は細くて柔らかく、真っ黒よりも、アッシュグレーや墨色のソフトな色味の人が多い傾向です。\n日焼けをしにくいのも特徴の一つ",
     keywords: "爽やか、、フェミニン、エレガント、ソフト、凛とした",
     paletteUrl: "https://res.cloudinary.com/dtewjoisz/image/upload/v1597909344/bijin%20carte/summer_wuslzj.jpg",
+    makeupUrl: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/Summer.jpg",
     secondBox: {
       title: "似合う色",
       text: "青みで明るくソフトな色\n涼しさを感じる白をベースにした爽やかなパウダリーカラー"
@@ -90,6 +93,7 @@ const MULTIPLE_QUESTIONS_RESULTS = [
     firstBox: "第一印象はクールでシャープで、キリっとしたカッコイイ印象や、華やかで人目を引くようなイメージ\n個性的だったり洗練された雰囲気の方が多いです。\n鮮やかでクリアな原色系の色やモノトーンが似合うタイプ。\n肌は色白もしくは色黒で、赤みが無いのが特徴\n髪はコシがあり、ツヤのある黒髪で、太く硬い方が多い傾向です。\n瞳の色は深く白目と黒目のコントラストがくっきりとしていて、目力が強いのも特徴です。",
     keywords: "クール・モダン・シャープ・個性的",
     paletteUrl: "https://res.cloudinary.com/dtewjoisz/image/upload/v1597909344/bijin%20carte/winter_vksu1t.jpg",
+    makeupUrl: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/Winter-e1598336225232.jpg",
     secondBox: {
       title: "似合う色",
       text: "青みで暗い色・ビビットな色\n華やかでコントラストのはっきりした鮮やかなカラーもオススメ"

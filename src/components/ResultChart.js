@@ -1,3 +1,5 @@
+// Result component for shindan A
+
 import React, { useEffect } from 'react';
 import { FacebookShareButton, TwitterShareButton, PinterestShareButton, PinterestIcon, FacebookIcon, TwitterIcon} from 'react-share';
 import '../styles/resultchart.scss';
@@ -30,6 +32,7 @@ const ResultChart = ({resultData}) => (
       <img src={resultData[0].paletteUrl} alt="color-palette" className="result-palette" />
       <h3>{resultData[0].thirdBox.title}</h3>
       <p>{resultData[0].thirdBox.text}</p>
+      <img src={resultData[0].makeupUrl} alt="make up" className="result-palette" />
       <h3>{resultData[0].fourthBox.title}</h3>
       <p>{resultData[0].fourthBox.text}</p>
     </div>
