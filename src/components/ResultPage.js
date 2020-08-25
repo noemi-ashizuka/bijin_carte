@@ -1,3 +1,5 @@
+// Result component for shindan B
+
 import React, { useEffect } from 'react';
 import { FacebookShareButton, TwitterShareButton, PinterestShareButton, PinterestIcon, FacebookIcon, TwitterIcon} from 'react-share';
 import '../styles/resultpage.scss';
