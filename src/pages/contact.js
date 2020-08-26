@@ -61,6 +61,7 @@ export default class Contact extends React.Component {
       <p className="form-subtitle"><span>あなたの綺麗を見つけるお手伝い</span> <br></br> ご予約はもちろん、レッスン内容などに関するお問い合わせも、お気軽にお問い合わせください。取材や撮影のご依頼もこちらからお願いいたします。</p>
       <Form onSubmit={this.handleSubmit} 
         method="POST" 
+        action="/thanks/"
         netlify-honeypot="bot-field"
         data-netlify="true"
         name="contact"
