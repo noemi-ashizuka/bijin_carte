@@ -12,7 +12,8 @@ export default class Contact extends React.Component {
       contactName: "",
       email: "",
       message: "",
-      option: ""
+      option: "",
+      status: ""
     };
   }
   
@@ -32,44 +33,35 @@ export default class Contact extends React.Component {
     })
   }
 
-  handleSubmit = e => {
+  handleSubmit = ev => {
     // event.preventDefault()
     // alert("Thank you for your message, we will reply soon")
     // console.log(this.state)
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch((error) => alert(error))
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
   }
 
   render() {
+    const { status } = this.state;
     return (<Layout>
       <h1 className="form-title">Contact Us</h1>
       {/* <h3 className="form-subtitle">あなたの綺麗を見つけるお手伝い</h3> */}
       <p className="form-subtitle"><span>あなたの綺麗を見つけるお手伝い</span> <br></br> ご予約はもちろん、レッスン内容などに関するお問い合わせも、お気軽にお問い合わせください。取材や撮影のご依頼もこちらからお願いいたします。</p>
-      <Form name="contact"
-          method="post"
-          action="/thanks/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit} 
-          className="form-wrapper">
-        
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-          <label>
-            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
-          </label>
-        </p>
+      <Form onSubmit={this.handleSubmit} action="https://formspree.io/xzbjqnjg" method="POST" className="form-wrapper">
         
         <Form.Group className="form-field">
           <Form.Label className="form-label">名前</Form.Label>
@@ -156,7 +148,9 @@ export default class Contact extends React.Component {
               cols={5}
               className="form-input" />
         </Form.Group>
-         <button type="submit" className="button-styled-form">Send</button>
+        {status === "SUCCESS" ? <p>Thank you</p> : <button type="submit" className="button-styled-form">Send</button> }
+        {/* <button type="submit" className="button-styled-form">Send</button> */}
+        {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </Form>
     </Layout>
   )}
