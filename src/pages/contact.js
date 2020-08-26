@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import Textarea from 'react-expanding-textarea';
 import {Form} from 'react-bootstrap';
 import { navigate } from 'gatsby-link'
+import swal from 'sweetalert'
 import '../styles/form.scss';
 
 function encode(data) {
@@ -50,7 +51,18 @@ export default class Contact extends React.Component {
         ...this.state,
       }),
     })
-      .then(() => navigate(form.getAttribute('action')))
+      // .then(() => navigate(form.getAttribute('action')))
+      .then(() => {swal({
+        text: "thank you!",
+        button: {
+          text: "Close",
+          value: true,
+          visible: true,
+          className: "alert-button",
+          closeModal: true
+        }
+      }) 
+      navigate('/')})
       .catch((error) => alert(error))
   }
 
@@ -61,7 +73,7 @@ export default class Contact extends React.Component {
       <p className="form-subtitle"><span>あなたの綺麗を見つけるお手伝い</span> <br></br> ご予約はもちろん、レッスン内容などに関するお問い合わせも、お気軽にお問い合わせください。取材や撮影のご依頼もこちらからお願いいたします。</p>
       <Form onSubmit={this.handleSubmit} 
         method="POST" 
-        action="/thanks/"
+        // action="/thanks/"
         netlify-honeypot="bot-field"
         data-netlify="true"
         name="contact"
@@ -77,7 +89,9 @@ export default class Contact extends React.Component {
               name="contactName" 
               value={this.state.contactName}
               onChange={this.handleInputChange}
-              className="form-input" />
+              className="form-input"
+              required
+               />
         </Form.Group>
         
         <Form.Group className="form-field">
@@ -87,7 +101,9 @@ export default class Contact extends React.Component {
               name="email" 
               value={this.state.email}
               onChange={this.handleInputChange}
-              className="form-input" />
+              className="form-input"
+              required
+              />
         </Form.Group>
 
         <Form.Group className="form-field">
@@ -153,7 +169,9 @@ export default class Contact extends React.Component {
               onChange={this.handleInputChange}
               rows={5}
               cols={5}
-              className="form-input" />
+              className="form-input"
+              required
+              />
         </Form.Group>
          <button type="submit" className="button-styled-form">Send</button>
         {/* <button type="submit" className="button-styled-form">Send</button> */}

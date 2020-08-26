@@ -31,7 +31,8 @@
     "react-html-parser": "^2.0.2",
     "react-reveal": "^1.2.2",
     "react-share": "^4.2.1",
-    "simple-react-lightbox": "^3.2.3-3"
+    "simple-react-lightbox": "^3.2.3-3",
+    "sweetalert": "^2.1.2"
   },
   "devDependencies": {
     "prettier": "2.0.5"
