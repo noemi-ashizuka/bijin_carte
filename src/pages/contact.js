@@ -2,7 +2,14 @@ import React from 'react';
 import Layout from '../components/layout';
 import Textarea from 'react-expanding-textarea';
 import {Form} from 'react-bootstrap';
+import { navigate } from 'gatsby-link'
 import '../styles/form.scss';
+
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
 
 export default class Contact extends React.Component {
   
@@ -34,24 +41,17 @@ export default class Contact extends React.Component {
 
   handleSubmit = ev => {
     ev.preventDefault();
-    alert("Thank you for your message, we will reply soon")
-    // console.log(this.state)
-    
-    // const form = ev.target;
-    // const data = new FormData(form);
-    // const xhr = new XMLHttpRequest();
-    // xhr.open(form.method, form.action);
-    // xhr.setRequestHeader("Accept", "application/json");
-    // xhr.onreadystatechange = () => {
-    //   if (xhr.readyState !== XMLHttpRequest.DONE) return;
-    //   if (xhr.status === 200) {
-    //     form.reset();
-    //     this.setState({ status: "SUCCESS" });
-    //   } else {
-    //     this.setState({ status: "ERROR" });
-    //   }
-    // };
-    // xhr.send(data);
+    const form = ev.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch((error) => alert(error))
   }
 
   render() {
