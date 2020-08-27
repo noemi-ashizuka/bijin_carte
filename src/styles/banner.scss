@@ -66,7 +66,6 @@
       right: 0;
       left: 5%;
       z-index: -1;
-      ///opacity: 0.7;
     }
 
     .banner-title {
@@ -79,7 +78,6 @@
         font-weight: 800;
         font-family: 'Limelight', cursive;
         line-height: 50%;
-        // margin-left: 5%;
         margin: 0 auto;
       }
 
@@ -89,7 +87,6 @@
         font-weight: 400;
         font-style: normal;
         margin: 0 auto;
-        // margin-left: 40px;
       }
 
       .banner-subtitle {
@@ -120,6 +117,12 @@
         background: linear-gradient(to bottom, rgba(243, 218, 218, 0.4), rgba(221, 178, 178, 0.4)), url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596002225/bijin%20carte/pexels-photo-2395249_g1vpqw.webp)
         center center no-repeat;
         background-size: cover;
+        position: absolute;
+        top: 15%;
+        bottom: 5%;
+        right: 0;
+        left: 5%;
+        z-index: -1;
       }
     }
 
@@ -141,7 +144,6 @@
 
       .banner-subtitle {
         text-align: end;
-        // line-height: 20%;
         margin-bottom: 24px;
       }
 
