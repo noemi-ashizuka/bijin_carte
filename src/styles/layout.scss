@@ -11,7 +11,7 @@ body {
   // background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1598487599/bijin%20carte/smaller_phone_bg_ziqwwp.jpg),
   // center center no-repeat;
   // background-size: cover;
-  // background-attachment: fixed;
+  // background-attachment: initial;
   color: $not-black;
   height: 100%;
   // font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic Pro", sans-serif;
@@ -55,7 +55,7 @@ body {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   body {
     background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596027230/bijin%20carte/pc_bg_light_jlw59b.jpg)
     center center no-repeat;

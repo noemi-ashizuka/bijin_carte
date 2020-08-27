@@ -47,20 +47,20 @@ const ResultChart = ({resultData}) => (
         url="http://google.com"
         children={<FacebookIcon size={40} className="quiz-share-icon" />}
         quote={`${resultData[0].title}キーワード: ${resultData[0].keywords}`}
-        hashtag="findyourbeauty"
+        hashtag="パーソナルカラー"
       />
       <TwitterShareButton
         url="http://google.com"
         children={<TwitterIcon size={40} className="quiz-share-icon" />}
         className="quiz-result-title"
-        title={`${resultData[0].title}キーワード: ${resultData[0].keywords}`}
+        title={`${resultData[0].title} キーワード: ${resultData[0].keywords}`}
         via="bijin_carte"
-        hashtags={["bijincarte", "findyourbeauty"]}
+        hashtags={["美人カルテ", "findyourbeauty", "パーソナルカラー", "メイクレッスン"]}
       />
       <PinterestShareButton
         url="http://google.com"
         children={<PinterestIcon size={40} className="quiz-share-icon" />}
-        media={resultData[0].mainImgUrl}
+        media={resultData[0].paletteUrl}
         description={`${resultData[0].title}キーワード: ${resultData[0].keywords}`}
       />
     </div>

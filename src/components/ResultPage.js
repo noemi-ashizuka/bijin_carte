@@ -24,9 +24,24 @@ const ResultPage = ({result}) => (
         <p className="result-page-text">「お風呂で保湿」のススメお風呂に入る時は、体中に保湿できる絶好のタイミング！なるべく湯船に浸かる事がオススメです。湯船に入るのが難しい場合は、バスルームに入る少し前からシャワーを出しで、空間をミストで満たしましょう◎ 肌が乾燥しにくくなります。またバスルームから出たら、すぐ保湿クリームで肌に蓋をすることで、潤った肌をキープできます。お顔はクリームではなく、コットンパックなどで更なる保湿と、肌の熱を取る事がオススメ＊</p>
         <div className="result-page-icons">
           <h2 className="result-page-icons-title">結果をシェアする</h2>
-          <FacebookShareButton children={<FacebookIcon size={40} className="share-icon" />} />
-          <TwitterShareButton children={<TwitterIcon size={40} className="share-icon" />} />
-          <PinterestShareButton children={<PinterestIcon size={40} className="share-icon" />} />
+          <FacebookShareButton 
+            url="https://www.bijin-carte.com"
+            quote="乾燥肌タイプ"
+            hashtag="#肌質診断" 
+            children={<FacebookIcon size={40} className="share-icon" />} 
+          />
+          <TwitterShareButton 
+            url="https://www.bijin-carte.com"
+            title="乾燥肌タイプ"
+            hashtags={["美人カルテ", "findyourbeauty", "肌質診断", "メイクレッスン"]}
+            children={<TwitterIcon size={40} className="share-icon" />} 
+          />
+          <PinterestShareButton
+            url="https://www.bijin-carte.com"
+            media="https://res.cloudinary.com/dtewjoisz/image/upload/v1597909353/bijin%20carte/%E4%B9%BE%E7%87%A5%E8%82%8C_matrix_for_hada_shindan__%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_1_fyzji7.svg"
+            description="美人カルテ 肌質診断"
+            children={<PinterestIcon size={40} className="share-icon" />}
+          />
         </div>
       </div>
     }
@@ -43,9 +58,24 @@ const ResultPage = ({result}) => (
        <p className="result-page-text">いろいろなタイプがあるスキンケアアイテム。化粧水やジェルなど、様々な商品があり、どんなタイプを選べば良いか迷ってしまいますよね。一般的に、オイル＞クリーム＞ジェル＞化粧水の順で油分がの含有量が多いです。季節や自分の肌タイプに合わせてどのタイプの化粧品を使うと良いのか、しっかり選べるといいですね！</p>
        <div className="result-page-icons">
          <h2 className="result-page-icons-title">結果をシェアする</h2>
-         <FacebookShareButton children={<FacebookIcon size={40} className="share-icon" />} />
-         <TwitterShareButton children={<TwitterIcon size={40} className="share-icon" />} />
-         <PinterestShareButton children={<PinterestIcon size={40} className="share-icon" />} />
+         <FacebookShareButton 
+            url="https://www.bijin-carte.com"
+            quote="混合肌タイプ"
+            hashtag="#肌質診断" 
+            children={<FacebookIcon size={40} className="share-icon" />} 
+          />
+          <TwitterShareButton 
+            url="https://www.bijin-carte.com"
+            title="混合肌タイプ"
+            hashtags={["美人カルテ", "findyourbeauty", "肌質診断", "メイクレッスン"]}
+            children={<TwitterIcon size={40} className="share-icon" />} 
+          />
+          <PinterestShareButton
+            url="https://www.bijin-carte.com"
+            media="https://res.cloudinary.com/dtewjoisz/image/upload/v1597909353/bijin%20carte/%E6%B7%B7%E5%90%88%E8%82%8C_%E6%B0%B4%E5%88%86%E5%A4%9A%E3%81%84_matrix_for_hada_shindan__%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_1_bmyhcs.svg"
+            description="美人カルテ 肌質診断"
+            children={<PinterestIcon size={40} className="share-icon" />}
+          />
        </div>
      </div>
     }
@@ -62,9 +92,24 @@ const ResultPage = ({result}) => (
         <p className="result-page-text">新しい化粧品って、いつ試すといいのだろう？健やか肌の場合でも、ホルモンランスなどで、肌状態は日々変化しています。新しい化粧水を試すなら、排卵日のちょっと前に試してみるのがオススメ＊肌の調子が良いタイミングなので、新しい化粧品の効果も分かりやすく、トラブルにもなりにくい時期です。（排卵日は一般的生理開始後14日と言われています。ただし個人差あり。）</p>
         <div className="result-page-icons">
           <h2 className="result-page-icons-title">結果をシェアする</h2>
-          <FacebookShareButton children={<FacebookIcon size={40} className="share-icon" />} />
-          <TwitterShareButton children={<TwitterIcon size={40} className="share-icon" />} />
-          <PinterestShareButton children={<PinterestIcon size={40} className="share-icon" />} />
+          <FacebookShareButton 
+            url="https://www.bijin-carte.com"
+            quote="普通肌タイプ"
+            hashtag="#肌質診断" 
+            children={<FacebookIcon size={40} className="share-icon" />} 
+          />
+          <TwitterShareButton 
+            url="https://www.bijin-carte.com"
+            title="普通肌タイプ"
+            hashtags={["美人カルテ", "findyourbeauty", "肌質診断", "メイクレッスン"]}
+            children={<TwitterIcon size={40} className="share-icon" />} 
+          />
+          <PinterestShareButton
+            url="https://www.bijin-carte.com"
+            media="https://res.cloudinary.com/dtewjoisz/image/upload/v1597909353/bijin%20carte/%E6%99%AE%E9%80%9A%E8%82%8C_matrix_for_hada_shindan__%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_1_uwmymz.svg"
+            description="美人カルテ 肌質診断"
+            children={<PinterestIcon size={40} className="share-icon" />}
+          />
         </div>
       </div>
     }
@@ -81,9 +126,24 @@ const ResultPage = ({result}) => (
       <p className="result-page-text">保湿成分として有名なヒアルロン酸！薬局で買えるお手頃な製品から高級なものにまで配合されています。一体何が違うの？？と感じることもズバリ、一口にヒアルロン酸と言っても、いくつも種類があるんです！ヒアルロン酸Naや、加水分解ヒアルロン酸など。。。何から得られたヒアルロン酸なのか？どのぐらいサイズを小さくしているのか？など、様々な種類のヒアルロン酸が作られています。種類によって、浸透率や効果に違いがあるんです◎購入の際は、配合されてるヒアルロン酸の名前を検索してみると、より自分にぴったりの化粧水と出会えるかも＊</p>
       <div className="result-page-icons">
         <h2 className="result-page-icons-title">結果をシェアする</h2>
-        <FacebookShareButton children={<FacebookIcon size={40} className="share-icon" />} />
-        <TwitterShareButton children={<TwitterIcon size={40} className="share-icon" />} />
-        <PinterestShareButton children={<PinterestIcon size={40} className="share-icon" />} />
+        <FacebookShareButton 
+            url="https://www.bijin-carte.com"
+            quote="混合肌タイプ"
+            hashtag="#肌質診断" 
+            children={<FacebookIcon size={40} className="share-icon" />} 
+          />
+          <TwitterShareButton 
+            url="https://www.bijin-carte.com"
+            title="混合肌タイプ"
+            hashtags={["美人カルテ", "findyourbeauty", "肌質診断", "メイクレッスン"]}
+            children={<TwitterIcon size={40} className="share-icon" />} 
+          />
+          <PinterestShareButton
+            url="https://www.bijin-carte.com"
+            media="https://res.cloudinary.com/dtewjoisz/image/upload/v1597909353/bijin%20carte/%E6%B7%B7%E5%90%88%E8%82%8C_%E6%B2%B9%E5%88%86%E5%A4%9A%E3%81%84_matrix_for_hada_shindan__%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_1_krti9u.svg"
+            description="美人カルテ 肌質診断"
+            children={<PinterestIcon size={40} className="share-icon" />}
+          />
       </div>
     </div>
     }
@@ -100,9 +160,24 @@ const ResultPage = ({result}) => (
       <p className="result-page-text">収れん作用って何！？簡単にお話しすると、お肌の引き締めや、引き締めによる発汗抑制のこと◎ 成分自体が収れん効果のある物や、冷水やアルコールなど皮膚温を一時的に低下させ、急冷によって肌を引き締める物理的な収れん作用など様々なアプローチ方法があります。自分の肌質や季節によってチョイスできると、化粧品選びが楽しくなりますね！</p>
       <div className="result-page-icons">
         <h2 className="result-page-icons-title">結果をシェアする</h2>
-        <FacebookShareButton children={<FacebookIcon size={40} className="share-icon" />} />
-        <TwitterShareButton children={<TwitterIcon size={40} className="share-icon" />} />
-        <PinterestShareButton children={<PinterestIcon size={40} className="share-icon" />} />
+        <FacebookShareButton 
+            url="https://www.bijin-carte.com"
+            quote="脂性肌タイプ"
+            hashtag="#肌質診断" 
+            children={<FacebookIcon size={40} className="share-icon" />} 
+          />
+          <TwitterShareButton 
+            url="https://www.bijin-carte.com"
+            title="脂性肌タイプ"
+            hashtags={["美人カルテ", "findyourbeauty", "肌質診断", "メイクレッスン"]}
+            children={<TwitterIcon size={40} className="share-icon" />} 
+          />
+          <PinterestShareButton
+            url="https://www.bijin-carte.com"
+            media="https://res.cloudinary.com/dtewjoisz/image/upload/v1597909355/bijin%20carte/%E8%84%82%E6%80%A7%E8%82%8C_matrix_for_hada_shindan__%E3%82%A2%E3%83%BC%E3%83%88%E3%83%9B%E3%82%99%E3%83%BC%E3%83%88%E3%82%99_1_vbmnle.svg"
+            description="美人カルテ 肌質診断"
+            children={<PinterestIcon size={40} className="share-icon" />}
+          />
       </div>
     </div>
     }

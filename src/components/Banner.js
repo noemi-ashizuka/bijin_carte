@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import {Link} from 'gatsby';
 import {Fade} from 'react-reveal';
 import '../styles/banner.scss';
 
@@ -17,7 +18,7 @@ const Banner = () => (
           <h3 className="banner-subtitle">with 美人カルテ</h3>
         </Fade>
         <div className="banner-button">
-          <Button title="Start Now" />
+          <Link to="/lessons"><Button title="Start Now" /></Link>
         </div>
       </div>
     </div>

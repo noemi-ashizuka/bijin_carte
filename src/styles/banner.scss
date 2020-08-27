@@ -1,36 +1,3 @@
-// .banner-box {
-//   background-color: rgba(255, 255, 255, 0.0);
-//   width: 100%;
-//   height: 400px;
-//   position: relative;
-  
-//   .banner-image-box {
-//     background: linear-gradient(to bottom, rgba(235, 182, 182, 0.4), rgba(236, 159, 159, 0.4)), url(https://res.cloudinary.com/dtewjoisz/image/upload/v1596002225/bijin%20carte/pexels-photo-2395249_g1vpqw.webp)
-//     center no-repeat;
-//     background-size: cover;
-//     // background-origin: border-box;
-//     box-sizing: border-box;
-//     opacity: 0.8;
-//     // background-color: rgba(235, 182, 182, 0.7);
-//     height: 85%;
-//     width: 95%;
-//     position: absolute;
-//     z-index: 2;
-//     left: 10%;//343.34px;
-//     top: 24%;//94px;
-//   }
-
-//   .banner-color-box {
-//     background-color: rgba(238, 231, 224, 0.5);
-//     width: 95%;
-//     height: 80%;
-//     position: absolute;
-//     left: 0;
-//     top: 15%;
-//     z-index: 1;
-//   }
-// }
-
 .banner-box {
   background-color:rgba(255, 255, 255, 0.0);
   width: 100%;
@@ -103,6 +70,10 @@
         height: 50px;
         display: flex;
         justify-content: center;
+
+        a {
+          text-decoration: none;
+        }
       }
     }
   }
@@ -182,6 +153,7 @@
         right: 8%;
       }
     }
+    
     .banner-title {
 
       .banner-bold-title {
