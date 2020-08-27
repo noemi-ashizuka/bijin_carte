@@ -150,11 +150,13 @@
     }
 
     .result-diagram-box {
-      display: flex;
+      //display: flex;
       // justify-content: space-around;
       // flex-wrap: wrap;
       .result-diagram {
-        width: 300px;
+        width: 100%;
+        padding-left: 160px;
+        padding-right: 160px;
       }
     }
 
