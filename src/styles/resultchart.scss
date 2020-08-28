@@ -208,7 +208,7 @@
       display: flex;
       flex-direction: column;
       .result-palette {
-        width: 300px;
+        width: 400px;
         margin: 0 auto;
         margin-bottom: 2%;
       }
@@ -216,10 +216,8 @@
 
     .result-diagram-box {
       display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
       .result-diagram {
-        width: 400px;
+        width: 350px;
       }
     }
 
