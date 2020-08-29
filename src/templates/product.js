@@ -12,8 +12,8 @@ export default ({pageContext}) => (
     </Helmet>
     <div className="product-details-wrapper">
       <h1 className="product-details-title">{pageContext.title}</h1>
-      {pageContext.featured_media && 
-    <img src={pageContext.featured_media.source_url} alt={pageContext.featured_media.alt_text} className="product-details-image" />
+      {pageContext.featured_media &&
+        <img src={pageContext.featured_media.source_url} alt={pageContext.featured_media.alt_text} className="product-details-image" />
       }
       <div className="product-details-color-box">
         <div dangerouslySetInnerHTML={{__html: pageContext.content}} className="product-details-text" />
