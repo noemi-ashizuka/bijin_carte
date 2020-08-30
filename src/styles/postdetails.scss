@@ -46,6 +46,10 @@
       }
     }
   }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 
@@ -71,8 +75,32 @@
 
       .post-details-text {
         img {
-          margin-left: 30%;
-          width: 350px;
+          margin-left: 10%;
+          width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1020px) {
+  .post-details-wrapper {
+    .post-details-right {
+      .post-details-text {
+        img {
+          margin-left: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .post-details-wrapper {
+    .post-details-right {
+      .post-details-text {
+        img {
+          margin-left: 25%;
         }
       }
     }

@@ -16,8 +16,8 @@ export default ({pageContext}) => (
     </Helmet>
     <Banner />
     <PostList />
-    <ProductsList />
     <ShindanList />
+    <ProductsList />
     <GalleryThumb />
   </Layout>
 );

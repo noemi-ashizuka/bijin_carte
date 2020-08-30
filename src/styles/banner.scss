@@ -24,7 +24,7 @@
     margin-right: 0;
 
     .banner-bg-image {
-      background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1598495979/bijin%20carte/flowers_banner_small_gradient2_hum72r.jpg)
+      background: linear-gradient(to bottom, rgba(243, 218, 218, 0.4), rgba(240, 203, 203, 0.4))
       center no-repeat;
       background-size: cover;
       position: absolute;
@@ -82,20 +82,6 @@
 @media (min-width: 688px) {
   .banner-box {
     height: 600px;
-
-    .banner-image-box {
-      .banner-bg-image {
-        background: url(https://res.cloudinary.com/dtewjoisz/image/upload/v1598495387/bijin%20carte/flowers_banner_gradient_qd70gp.jpg)
-        center center no-repeat;
-        background-size: cover;
-        position: absolute;
-        top: 15%;
-        bottom: 5%;
-        right: 0;
-        left: 5%;
-        z-index: -1;
-      }
-    }
 
     .banner-title {
       width: 80%;

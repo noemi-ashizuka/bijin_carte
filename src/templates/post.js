@@ -1,6 +1,8 @@
 import React from 'react';
 import Layout from '../components/layout';
 import ReactHtmlParser from 'react-html-parser';
+import Button from '../components/Button';
+import {Link} from 'gatsby';
 import { Helmet } from "react-helmet";
 import '../styles/postdetails.scss';
 
@@ -19,6 +21,7 @@ export default ({pageContext}) => (
         <h1 dangerouslySetInnerHTML={{__html: pageContext.title}} className="post-details-title" />
         <div dangerouslySetInnerHTML={{__html: pageContext.content}} className="post-details-text" />
       </div>
+        <Link to="/"><Button title="Back" /></Link>
     </div>
   </Layout>
 );
