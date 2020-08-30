@@ -21,11 +21,6 @@ export default ({pageContext}) => (
     </div>
     {pageContext.acf.image &&
       <GalleryPost imgOne={pageContext.acf.image} imgTwo={pageContext.acf.image_2} imgThree={pageContext.acf.image_3} />
-      // <div>
-      //   <img src={pageContext.acf.image.localFile.childImageSharp.fluid.src}></img>
-      //   <img src={pageContext.acf.image_2.localFile.childImageSharp.fluid.src}></img>
-      //   <img src={pageContext.acf.image_3.localFile.childImageSharp.fluid.src}></img>
-      // </div>
     }
   </Layout>
 );

@@ -39,15 +39,30 @@
         text-align: left;
       }
 
+      .light-pink {
+        background-color: rgba(214,195,181,0.3);
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding: 24px;
+      }
+
+      .light-brown {
+        background-color: rgba(134,113,103,0.1);
+        margin-bottom: 5%;
+        margin-top: 5%;
+        padding: 24px;
+      }
+
       .pink {
-        background-color: rgba(255, 248, 242, 0.7);
+        // background-color: rgba(255, 248, 242, 0.7);
+        background-color: rgba(193,116,64,0.1);
         margin-bottom: 5%;
         margin-top: 5%;
         padding: 24px;
       }
 
       .brown {
-        background-color: rgba(233, 225, 218, 0.7);
+        background-color: rgba(134,113,103,0.2);
         margin-bottom: 5%;
         margin-top: 5%;
         padding: 24px;
