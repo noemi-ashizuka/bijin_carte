@@ -53,7 +53,8 @@ export default class Contact extends React.Component {
     })
       // .then(() => navigate(form.getAttribute('action')))
       .then(() => {swal({
-        text: "thank you!",
+        title: "Thank you for your message!",
+        text: "お問い合わせありがとうございます。返信までしばらくお待ちください",
         button: {
           text: "Close",
           value: true,

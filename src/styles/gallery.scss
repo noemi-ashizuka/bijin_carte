@@ -10,7 +10,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    //flex-direction: column;
     justify-content: space-around;
     position: relative;
     z-index: 1000;
@@ -27,7 +26,7 @@
       }
 
       p {
-        opacity: 0.8;
+        color: rgb(41, 40, 39);
         text-align: center;
       }
       
