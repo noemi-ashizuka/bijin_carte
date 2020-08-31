@@ -150,10 +150,11 @@
     }
 
     .result-diagram-box {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
       .result-diagram {
-        width: 95%;
-        padding-left: 160px;
-        padding-right: 160px;
+        width: 350px;
       }
     }
 
@@ -183,6 +184,7 @@
       text-align: center;
       .result-diagram {
         width: 80%;
+        width: 250px;
       }
     }
   }
@@ -238,6 +240,8 @@
 
     .result-diagram-box {
       display: flex;
+      flex-direction: column;
+      margin: 0 auto;
       .result-diagram {
         width: 350px;
         padding: 8px;
@@ -272,6 +276,11 @@
       .result-palette {
         width: 480px;
       }
+    }
+
+    .result-diagram-box {
+      display: flex;
+      flex-direction: row;
     }
   }
 }
