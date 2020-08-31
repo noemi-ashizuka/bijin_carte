@@ -44,21 +44,20 @@ const ResultChart = ({resultData}) => (
     <div className="quiz-icons-wrapper">
       <h3 className="quiz-icons-title">結果をシェアする</h3>
       <FacebookShareButton
-        url="http://google.com"
+        url="https://bijin-carte.com"
         children={<FacebookIcon size={40} className="quiz-share-icon" />}
-        quote={`${resultData[0].title}キーワード: ${resultData[0].keywords}`}
+        quote={`${resultData[0].title} キーワード: ${resultData[0].keywords}`}
         hashtag="パーソナルカラー"
       />
       <TwitterShareButton
-        url="http://google.com"
+        url="https://bijin-carte.com"
         children={<TwitterIcon size={40} className="quiz-share-icon" />}
         className="quiz-result-title"
         title={`${resultData[0].title} キーワード: ${resultData[0].keywords}`}
-        via="bijin_carte"
         hashtags={["美人カルテ", "findyourbeauty", "パーソナルカラー", "メイクレッスン"]}
       />
       <PinterestShareButton
-        url="http://google.com"
+        url="https://bijin-carte.com"
         children={<PinterestIcon size={40} className="quiz-share-icon" />}
         media={resultData[0].paletteUrl}
         description={`${resultData[0].title}キーワード: ${resultData[0].keywords}`}

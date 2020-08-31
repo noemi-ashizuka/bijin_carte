@@ -28,6 +28,8 @@
       p {
         color: rgb(41, 40, 39);
         text-align: center;
+        position: relative;
+        z-index: 9999;
       }
       
     }
@@ -42,7 +44,6 @@
   }
   
   .gallery-title {
-    // font-size: 3rem;
     text-align: center;
     font-family: "rollerscript-rough", sans-serif;
     font-weight: 400;
@@ -51,7 +52,6 @@
   
   .gallery-subtitle {
     text-align: center;
-    // font-size: 1rem;
     font-weight: 300;
     margin-bottom: 32px;
     margin-top: 5%;
@@ -61,7 +61,6 @@
     text-decoration: none;
     z-index: 1000;
     .button-standard {
-      // position: relative;
       z-index: 1000;
     }
   }
