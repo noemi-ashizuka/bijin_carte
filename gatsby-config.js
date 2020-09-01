@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `美人カルテ`,
     description: `美人カルテ。あなたの本来の「美」を見つけるメイクレッスン。 そのお手伝いをさせていただきます。あなただけのオリジナルのメイク法をお伝えします。`,
-    url: `https://www.bijin-carte.com`, // image ?
+    siteUrl: `https://www.bijin-carte.com`,
     author: `BijinCarte`,
   },
   plugins: [
