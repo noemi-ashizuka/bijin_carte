@@ -3,6 +3,7 @@ import {graphql, StaticQuery} from 'gatsby';
 import Layout from '../components/layout';
 import {Fade} from 'react-reveal';
 import { SRLWrapper } from 'simple-react-lightbox';
+import SEO from '../components/seo';
 import '../styles/gallery.scss';
 import Img from 'gatsby-image';
 
@@ -41,6 +42,7 @@ const Gallery= () => (
     `
   } render={props =>(
     <Layout>
+      <SEO title="美人カルテギャラリー" />
       <div className="gallery-wrapper">
         <h1 className="gallery-title">Gallery</h1>
         <h3 className="gallery-subtitle">各メニューのサンプルのスライドショー</h3>

@@ -4,6 +4,7 @@ import MultipleQuizQuestions from '../data/multipleQuizQuestions';
 import multipleQuestionsResults from '../data/multipleQuestionsResults';
 import QuestionBox from '../components/QuestionBox';
 import ResultChart from '../components/ResultChart';
+import SEO from '../components/seo';
 import '../styles/shindana.scss';
 
 class ShindanA extends React.Component {
@@ -59,6 +60,7 @@ class ShindanA extends React.Component {
   render() {
     return (
       <Layout>
+        <SEO title="パーソナルカラー" />
         <div className="quiz-container">
           <h1 className="quiz-title">Personal Color</h1>
           {this.state.questions.length > 0 &&

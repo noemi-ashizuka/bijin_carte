@@ -3,6 +3,7 @@ import YesNo from '../data/yesnoData';
 import {Fade} from 'react-reveal';
 import Layout from '../components/layout';
 import ResultPage from '../components/ResultPage';
+import SEO from '../components/seo';
 import '../styles/shindanb.scss';
 
 class ShindanB extends React.Component {
@@ -103,6 +104,7 @@ class ShindanB extends React.Component {
 
     return (
       <Layout>
+        <SEO title="肌質診断" />
         <div className="shindan-page-wrapper">
           <div className="question-box">
             {this.state.questionCounter % 2 === 0 &&

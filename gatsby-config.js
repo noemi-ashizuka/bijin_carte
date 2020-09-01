@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Bijin Carte`,
-    description: `Find your beauty with bijin carte, personalized make up lessons`,
-    url: `https://www.noemi-ashizuka.com`, // image ?
+    title: `美人カルテ`,
+    description: `美人カルテ。あなたの本来の「美」を見つけるメイクレッスン。 そのお手伝いをさせていただきます。あなただけのオリジナルのメイク法をお伝えします。`,
+    url: `https://www.bijin-carte.com`, // image ?
     author: `BijinCarte`,
   },
   plugins: [
@@ -160,5 +160,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-advanced-sitemap`,
   ],
 }
