@@ -2,7 +2,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   // all images should be changed with links to wp media or other hosting in production
   {
     id: 1,
-    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/pexels-freestocksorg-318379-scaled-e1598336144421.jpg",
+    img_url: "https://www.wp.bijin-carte.com/wp-content/uploads/2020/08/pexels-freestocksorg-318379-scaled-e1598336144421.jpg",
     question: "あなたの顔の印象は？",
     answers: [
       {
@@ -29,7 +29,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 2,
-    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/content-pixie-WdJ4WnLxyDs-unsplash-scaled-e1597280771849.jpg",
+    img_url: "https://www.wp.bijin-carte.com/wp-content/uploads/2020/08/content-pixie-WdJ4WnLxyDs-unsplash-scaled-e1597280771849.jpg",
     question: "腕の内側（紫外線を浴びにくい場所）、肌から見える血管の色味は？？",
     answers: [
       {
@@ -56,7 +56,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 3,
-    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/pexels-dids-1499517-scaled-e1598336094676.jpg",
+    img_url: "https://www.wp.bijin-carte.com/wp-content/uploads/2020/08/pexels-dids-1499517-scaled-e1598336094676.jpg",
     question: "あなたの唇の特徴は？",
     answers: [
       {
@@ -83,7 +83,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 4,
-    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/brooke-lark-Aq2GM7iV71A-unsplash-scaled-e1597280660217.jpg",
+    img_url: "https://www.wp.bijin-carte.com/wp-content/uploads/2020/08/brooke-lark-Aq2GM7iV71A-unsplash-scaled-e1597280660217.jpg",
     question: "髪（地毛）の色は？",
     answers: [
       {
@@ -98,7 +98,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
       },
       {
         answerId: 115,
-        content: "ブラウン。太陽に当たると柔らかなブラウンに見える。",
+        content: "ブラウン。太陽に当たると柔らかなブラウンに見える",
         type: "A"
       },
       {
@@ -110,12 +110,12 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 5,
-    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/camille-brodard-kmile-feminine-creative-designer-VxAwTeiqDao-unsplash-scaled-e1597280711356.jpg",
+    img_url: "https://www.wp.bijin-carte.com/wp-content/uploads/2020/08/camille-brodard-kmile-feminine-creative-designer-VxAwTeiqDao-unsplash-scaled-e1597280711356.jpg",
     question: "日焼けするとどうなる？",
     answers: [
       {
         answerId: 117,
-        content: "日焼けしやすく、吸収して黒くなる。元の色に戻りにくい。",
+        content: "日焼けしやすく、吸収して黒くなる。元の色に戻りにくい",
         type: "B"
       },
       {
@@ -125,7 +125,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
       },
       {
         answerId: 119,
-        content: "すぐに日焼けするが、もどるのも早い秋ごろから徐々に戻り、冬には元通りなタイプ。",
+        content: "すぐに日焼けするが、戻るのも早い。秋ごろから徐々に戻り、冬には元通りなタイプ",
         type: "A"
       },
       {
@@ -137,7 +137,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 6,
-    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/jess-bailey-jL6vsxG8vtw-unsplash-scaled-e1598320065560.jpg",
+    img_url: "https://www.wp.bijin-carte.com/wp-content/uploads/2020/08/jess-bailey-jL6vsxG8vtw-unsplash-scaled-e1598320065560.jpg",
     question: "肌がきれいに見えるアクセサリーは？",
     subLine: "※アクセサリーがない場合は、きれいな1円玉と5円玉を手の甲に乗せて比べてください\n（5円玉の場合は、AかB。艶ありか無しで選んでみてください。1円玉の場合は、CかD。艶ありか無しで選んでみてください。",
     answers: [
@@ -153,24 +153,24 @@ const MULTIPLE_QUIZ_QUESTIONS = [
       },
       {
         answerId: 119,
-        content: "C: 光沢控えめのプラチナ、シルバー。",
+        content: "C: 光沢控えめのプラチナ、シルバー",
         type: "C"
       },
       {
         answerId: 117,
-        content: "D: 艶のあるプラチナ、シルバー。",
+        content: "D: 艶のあるプラチナ、シルバー",
         type: "D"
       }
     ]
   },
   {
     id: 7,
-    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/lavender-e1598320029906.jpeg",
+    img_url: "https://www.wp.bijin-carte.com/wp-content/uploads/2020/08/lavender-e1598320029906.jpeg",
     question: "身近な人に褒められるファッションカラー・口紅の色は？",
     answers: [
       {
         answerId: 117,
-        content: "マスタードやテラコッタなど深みのある色味マスタードやテラコッタなど深みのある色味",
+        content: "マスタードやテラコッタなど深みのある色味",
         type: "B"
       },
       {
@@ -192,17 +192,17 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 8,
-    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/anthony-tran-Sd9A6NVHsd4-unsplash-scaled-e1597280617108.jpg",
+    img_url: "https://www.wp.bijin-carte.com/wp-content/uploads/2020/08/anthony-tran-Sd9A6NVHsd4-unsplash-scaled-e1597280617108.jpg",
     question: "自分で苦手意識のあるリップは？",
     answers: [
       {
         answerId: 117,
-        content: "ワインレッドなどの深くて暗めの色味。顔色が悪く見える。",
+        content: "ワインレッドなどの深くて暗めの色味。顔色が悪く見える",
         type: "A"
       },
       {
         answerId: 118,
-        content: "オレンジやレッド系。オレンジ系のはっきりした色味だと唇だけ目立つ。",
+        content: "オレンジやレッド系。オレンジ系のはっきりした色味だと唇だけ目立つ",
         type: "C"
       },
       {
@@ -219,7 +219,7 @@ const MULTIPLE_QUIZ_QUESTIONS = [
   },
   {
     id: 9,
-    img_url: "http://www.wp.bijin-carte.com/wp-content/uploads/2020/08/jamie-street-aMuq-Xz7R_M-unsplash-scaled-e1597280960438.jpg",
+    img_url: "https://www.wp.bijin-carte.com/wp-content/uploads/2020/08/jamie-street-aMuq-Xz7R_M-unsplash-scaled-e1597280960438.jpg",
     question: "周りから見たあなたの第一印象は？",
     answers: [
       {
