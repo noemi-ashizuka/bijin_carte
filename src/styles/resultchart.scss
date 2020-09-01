@@ -86,6 +86,7 @@
   }
 
   .result-diagram-box {
+    
     .result-diagram {
       margin-bottom: 5%;
       width: 100%;
@@ -135,6 +136,7 @@
 
 @media (min-width: 688px) {
   .result-wrapper{
+    
     .result-bg-marble {
       height: 600px;
     }
@@ -168,6 +170,7 @@
 
 @media (min-width: 1025px) {
   .result-wrapper {
+    
     .result-bg-marble {
       top: 30%;
       left: 5%;
@@ -231,6 +234,7 @@
     .result-main-content {
       display: flex;
       flex-direction: column;
+      
       .result-palette {
         width: 460px;
         margin: 0 auto;
