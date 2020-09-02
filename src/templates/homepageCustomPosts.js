@@ -7,7 +7,6 @@ import Banner from '../components/Banner';
 import PostList from '../components/PostList';
 import GalleryThumb from '../components/GalleryThumb';
 import ShindanList from '../components/ShindanList';
-// import SEO from '../components/seo';
 
 export default ({pageContext}) => (
   <Layout>

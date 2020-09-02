@@ -7,6 +7,7 @@ module.exports = {
     title: `美人カルテ`,
     description: `美人カルテ。あなたの本来の「美」を見つけるメイクレッスン。 そのお手伝いをさせていただきます。あなただけのオリジナルのメイク法をお伝えします。`,
     siteUrl: `https://www.bijin-carte.com`,
+    lang: `ja`,
     defaultImage: `https://www.wp.bijin-carte.com/wp-content/uploads/2020/09/-e1599005754846.jpg`,
     author: `BijinCarte`,
   },

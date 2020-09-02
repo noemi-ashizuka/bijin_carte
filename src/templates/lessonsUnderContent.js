@@ -9,8 +9,6 @@ export default ({pageContext}) => (
     <Helmet>
       { ReactHtmlParser(pageContext.yoast_head)}
     </Helmet>
-    {/* <h1 dangerouslySetInnerHTML={{__html: pageContext.title}} />
-    <div dangerouslySetInnerHTML={{__html: pageContext.content}} /> */}
     <ProductsList />
   </Layout>
 );
