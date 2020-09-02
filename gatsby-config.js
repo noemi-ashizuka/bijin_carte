@@ -161,5 +161,11 @@ module.exports = {
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
+      }
+    },
   ],
 }
