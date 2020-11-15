@@ -113,7 +113,7 @@ export default class Contact extends React.Component {
           {['radio'].map((type) =>(
             <div key={`inline-${type}`} className="mb-3">
 
-              <Form.Check 
+              {/* <Form.Check 
                 inline label="メイク体験" 
                 type={type} 
                 id={`inline-${type}-1`} 
@@ -121,7 +121,7 @@ export default class Contact extends React.Component {
                 value="メイク体験"
                 checked={this.state.option === "メイク体験"}
                 onChange={this.handleOptionChange}
-                className="form-radio" />
+                className="form-radio" /> */}
               <Form.Check 
                 inline label="オンラインメイクレッスン" 
                 type={type} 
@@ -140,7 +140,7 @@ export default class Contact extends React.Component {
                 checked={this.state.option === "美人カルテ"}
                 onChange={this.handleOptionChange}
                 className="form-radio" />
-                <Form.Check 
+                {/* <Form.Check 
                 inline label="ポーチのお悩み解決します" 
                 type={type} 
                 id={`inline-${type}-4`} 
@@ -148,7 +148,7 @@ export default class Contact extends React.Component {
                 value="ポーチのお悩み解決します"
                 checked={this.state.option === "ポーチのお悩み解決します"}
                 onChange={this.handleOptionChange}
-                className="form-radio" />
+                className="form-radio" /> */}
                 <Form.Check 
                 inline label="その他" 
                 type={type} 
