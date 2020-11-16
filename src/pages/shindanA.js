@@ -11,7 +11,7 @@ class ShindanA extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state= {
+    this.state = {
       questions: [],
       subLine: 0,
       questionCount: 0,
@@ -50,7 +50,7 @@ class ShindanA extends React.Component {
 
   getResult = (resultType) => {
     return multipleQuestionsResults.filter(data => data.resultType === resultType)
-   }
+  }
 
   componentDidMount() {
     this.getQuestions();
@@ -65,18 +65,18 @@ class ShindanA extends React.Component {
           <h1 className="quiz-title">Personal Color</h1>
           {this.state.questions.length > 0 &&
             this.state.questionCount < 9 &&
-              this.state.questions.map(
-                ({question, answers, id, img_url, subLine}) => 
-                  <QuestionBox 
-                    question={question}
-                    answers={answers}
-                    imageUrl={img_url}
-                    subLine={subLine}
-                    key={id}
-                    selected={answer => this.computeAnswer(answer)}
-                  />
-              )}
-              {this.state.questionCount === 9 ? (<ResultChart resultData={this.getResult(this.checkResultType())} />) : null }
+            this.state.questions.map(
+              ({ question, answers, id, img_url, subLine }) =>
+                <QuestionBox
+                  question={question}
+                  answers={answers}
+                  imageUrl={img_url}
+                  subLine={subLine}
+                  key={id}
+                  selected={answer => this.computeAnswer(answer)}
+                />
+            )}
+          {this.state.questionCount === 9 ? (<ResultChart resultData={this.getResult(this.checkResultType())} />) : null}
         </div>
       </Layout>
     )

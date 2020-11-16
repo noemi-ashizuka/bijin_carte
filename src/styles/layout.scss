@@ -26,6 +26,11 @@ body {
   h3 {
     font-size: 1.5rem;
   }
+  
+  .link-plain {
+    text-decoration: none;
+    color: $not-black;
+  }
 }
 
 .container {
